@@ -1,5 +1,7 @@
 body {
   background-color: lightgoldenrodyellow;
+  margin-left: 10vw;
+  margin-right: 10vw;
   color: navy;
   font-family: sans-serif;
 }
@@ -37,9 +39,9 @@ figure {
 }
 
 figure img {
-  max-height: 450px;
   object-fit: cover;
-  width: 50vw;
+  height: 400px;
+  width: 400px;
 }
 
 figcaption {
