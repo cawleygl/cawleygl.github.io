@@ -1,0 +1,48 @@
+body {
+  background-color: lightgoldenrodyellow;
+  color: navy;
+  font-family: sans-serif;
+}
+h1, h2, h3, header, footer {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: crimson;
+}
+
+a:visited {
+  color: cadetblue;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+a:active {
+  color: maroon;
+}
+
+.introduction h2 {
+  text-align: center;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  max-height: 450px;
+  object-fit: cover;
+  width: 50vw;
+}
+
+figcaption {
+  font-style: italic;
+}
+
