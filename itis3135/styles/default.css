@@ -5,6 +5,7 @@ body {
   color: navy;
   font-family: sans-serif;
 }
+
 h1, h2, h3, header, footer {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
@@ -35,12 +36,15 @@ figure {
 }
 
 figure img {
-  object-fit: cover;
-  height: 400px;
-  width: 400px;
+  width: 50vw;
+  max-width: 350px;
 }
 
 figcaption {
   font-style: italic;
+}
+
+.indent {
+  margin-left: 1em;
 }
 
