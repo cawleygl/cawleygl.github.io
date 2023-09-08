@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Cawley's Gilded Condor || ITIS3135 || Forms</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+  <header>
+    <h1>Grant Cawley's Gilded Condor || ITIS3135</h1>
+    <nav>
+      <a href="./">Home</a>
+      ||
+      <a href="introduction.html">Introduction</a>
+      ||
+      <a href="contract.html">Contract</a>
+      ||
+      <a href="tables.html">Tables</a>
+      ||
+      <a href="forms.html">Forms</a>
+      ||
+      <a href="/">Back to Main Site</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Forms</h2>
+    <form action="#">
+      <fieldset>
+        <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" size="25" required></label>
+        <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" size="25" required></label>
+        <label for="phone">Phone Number: <input id="phone" name="phone" type="tel" size="15" placeholder="(555) 555-5555"
+            maxlength="10"></label>
+        <label for="email">Email Address: <input id="email" name="email" type="email" size="25" required
+            placeholder="name@website.com"></label>
+      </fieldset>
+      <fieldset>
+        <p>Which Cawley & Company services have you utilized? Check all that apply.</p>
+        <label for="">Web Design<input id="web" name="services" type="checkbox" value="web"></label>
+        <label for="">Corporate Mergers and Acquisitions<input id="mergers-acquisitions" name="services" type="checkbox"
+            value="mergers-acquisitions"></label>
+        <label for="">Vehicle Repair<input id="repair" name="services" type="checkbox" value="repair"></label>
+        <label for="">Media Consulting<input id="consulting" name="services" type="checkbox" value="consulting"></label>
+      </fieldset>
+      <fieldset>
+        <p>How would you rate your overall satisfaction with your experience with Cawley & Company?</p>
+        <label for="very-satisfied">Very Satisfied<input id="very-satisfied" name="rating" type="radio"
+            value="option"></label>
+        <label for="somewhat-satisfied">Somewhat Satisfied<input id="somewhat-satisfied" name="rating" type="radio" value="option"></label>
+        <label for="neutral">Neutral<input id="neutral" name="rating" type="radio" value="option"></label>
+        <label for="somewhat-dissatisfied">Somewhat Dissatisfied<input id="somewhat-dissatisfied" name="rating" type="radio" value="option"></label>
+        <label for="very-dissatisfied">Very Dissatisfied<input id="very-dissatisfied" name="rating" type="radio"
+            value="option"></label>
+      </fieldset>
+      <fieldset>
+        <label for="reference">How did you first hear about Cawley & Company?
+          <select id="reference" name="reference">
+            <option value="" >Select One</option>
+            <option value="1">Search Engine</option>
+            <option value="2">Personal Recommendation</option>
+            <option value="3">Television Advertisement</option>
+            <option value="4">Billboard</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+      <input id="reset" type="reset" value="Reset">
+    </form>
+  </main>
+  <footer>
+    <nav>
+      <a href="https://webpages.charlotte.edu/gcawley/">CLT Webspace</a>
+      ||
+      <a href="https://github.com/cawleygl">Github</a>
+      ||
+      <a href="https://cawleygl.github.io/">Github.io</a>
+      ||
+      <a href="https://www.freecodecamp.org/cawleygl">freeCodeCamp</a>
+      ||
+      <a href="https://www.codecademy.com/profiles/cawleygl">Codecademy</a>
+      ||
+      <a href="https://www.linkedin.com/in/grant-l-cawley/">LinkedIn</a>
+    </nav>
+    <p>Designed by <a href="cawleyandco.com/">Cawley & Company &copy;2023</a></p>
+    <a href="https://validator.w3.org/check?uri=referer">
+      <img style="border: 0; width: 88px; height: 31px"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border: 0; width: 88px; height: 31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+        alt="Valid CSS!">
+    </a>
+  </footer>
+</body>
+
+</html>
