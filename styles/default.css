@@ -1,0 +1,38 @@
+body {
+  background-color: #202C39;
+  color: #F2D492;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1,
+h2,
+h3,
+header,
+footer {
+  font-family: serif;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #F29559;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #12A592;
+  font-style: italic;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #0d796b;
+}
+
