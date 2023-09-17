@@ -5,43 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cawley & Company Homepage</title>
+  <!-- https://coolors.co/273e47-a4243b-e8dfc4-55917f-5bc0eb -->
   <style>
     body {
-      background-color: midnightblue;
+      background-color: #E8DFC4;
       margin-left: 10vw;
       margin-right: 10vw;
-      color: aliceblue;
+      color: #273E47;
       font-family: sans-serif;
     }
 
-    p,
     h1,
     h2,
-    h3,
     header,
     footer {
-      font-family: serif;
       text-align: center;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #A4243B;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     a {
       text-decoration: none;
     }
 
-    a:link {
-      color: antiquewhite;
-    }
-
-    a:visited {
-      color: bisque;
-    }
-
-    a:hover {
+    a:link,
+    a:visited,
+    a:active {
+      color: #55917F;
       font-style: italic;
     }
 
-    a:active {
-      color: azure;
+    a:hover {
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: circle;
+    }
+
+    .contact {
+      text-align: center;
+      color: #A4243B;
     }
   </style>
 </head>
@@ -49,13 +58,30 @@
 <body>
   <header>
     <h1>Cawley & Company</h1>
-    <nav>
-      <a href="/">Grant's Main Site</a>
-    </nav>
+    <img src="../images/CandC.png">
   </header>
   <main>
-    <h2>Cawley & Company Home</h2>
-    <p>Welcome to our homepage! More is coming soon!</p>
+    <h2>Cawley & Company's Services</h2>
+    <p>Cawley & Company is a design firm dedicated to delivering quality web experiences to consumers across the globe.
+      We employ talented and experienced designers to conceive of new and engaging web spaces, and web experts to bring
+      these visions into reality. Cawley & Company guarantees any web experience we implement one hundred percent, and
+      will work around the clock to maintain and improve your web experience.</p>
+    <h3>Cawley & Company Web Experiences Often Include: </h3>
+    <ul>
+      <li>Headers complete with navbars!</li>
+      <li>Footers including your company's mission statement! In italics!</li>
+      <li>Lists of items or services that your company offers!</li>
+      <li>Images of your company's real-life locations!</li>
+      <li>Hyperlinks to useful sites that your company manages!</li>
+      <li>Design including your company's logo and colors!</li>
+      <li>New and never-before-seen experiences for customers!</li>
+      <li>Any specific requests you might have!</li>
+    </ul>
+    <p>Cawley & Company will create a new website for your company in as little as one week, or a new, engaging web
+      experience in as little as one month. We will implement and maintain your experience for the duration of your
+      company's existence. Call today for a free consultation, and let Cawley & Company design a new, online location
+      for your business or enterprise!</p>
+    <p class="contact"><strong>(555) 555-5555 || contact@cawleyandco.com || 3 Business Park St. Companyville NC</strong></p>
   </main>
   <footer>
     <p><em>Dedicated to building quality web experiences since 2023</em></p>
