@@ -1,0 +1,31 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 200px;
+  color: black;
+}
+
+h1 {
+  background-color: blue;
+  color: red;
+}
+
+h3 {
+  font-family: Papyrus;
+  background-image: linear-gradient(to right, green , brown);
+  color: white;
+}
+
+ul {
+  text-align: center;
+  background-image: linear-gradient(to top, purple, gold);
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-size: xx-large;
+  background-color: white;
+}
