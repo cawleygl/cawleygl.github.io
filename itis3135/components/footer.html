@@ -13,12 +13,15 @@
     <a href="https://www.linkedin.com/in/grant-l-cawley/">LinkedIn</a>
   </nav>
   <p>Designed by <a href="cawleyandco.com/">Cawley & Company &copy;2023</a></p>
-  <a href="https://validator.w3.org/check?uri=referer">
-    <img style="border: 0; width: 88px; height: 31px"
-      src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+  <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+    <img src="./images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." />
   </a>
-  <a href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border: 0; width: 88px; height: 31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-      alt="Valid CSS!">
+  <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+    <img src="./images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+  </a>
   </a>
 </footer>
+<script>
+  document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+  document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
