@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Cawley's Gilded Condor || ITIS3135 || First Scripts</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="scripts/defaultscripts.js"></script>
+</head>
+
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <p id="condor-perch"></p>
+    <h2>First Scripts</h2>
+    <script>
+      var date = new Date();
+      var currentHour = date.getHours() >= 12 ? date.getHours() - 12 : date.getHours();
+      var currentTOD = date.getHours() >= 12 ? "PM" : "AM";
+      var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var monthsOfTheYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+      document.write("<h3>Today is " + currentHour + ":" + date.getMinutes() + currentTOD + " on "
+        + daysOfTheWeek[date.getDay()] + ", " + date.getDate() + " " + monthsOfTheYear[date.getMonth()] + ", "
+        + date.getFullYear() + "</h3>");
+
+    </script>
+
+    <form action="#">
+      <fieldset>
+        <label for="user-name">What is your name?<input id="user-name" name="user-name" type="text" size="50"
+            required></label>
+        <label for="user-status">How are you feeling?<input id="user-status" name="user-status" type="text" size="50"
+            placeholder="I'm feeling ..."></label>
+      </fieldset>
+      <input id="submit" type="button" value="Submit" onclick="userNameAndFeelings();">
+      <p class="alert-box" id="user-greeting"></p>
+
+    </form>
+    <form action="#">
+      <fieldset>
+        <label for="user-name">Enter your favorite number (Between 1 and 10)!<input id="user-number" name="user-number"
+            type="number" required></label>
+      </fieldset>
+      <input id="submit" type="button" value="Submit" onclick="numberToPolygon();">
+      <p class="alert-box" id="user-polygon"></p>
+
+    </form>
+    <form action="#">
+      <fieldset>
+        <button id="gild-the-lily-button" class="button-group" onclick="gildTheLily();">Gild the Lily</button>
+        <button class="button-group" onclick="circleYourPrey();">Circle Above, Menacingly</button>
+        <button class="button-group" onclick="condorStatus();">Condor Status</button>
+        <button class="button-group" onclick="verifyEgg();">Verify Egg</button>
+      </fieldset>
+    </form>
+
+
+  </main>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/include.js"></script>
+</body>
+
+</html>
