@@ -11,7 +11,12 @@ function numberToPolygon() {
   if (document.getElementById("user-number").value) {
     var polygons = ["Nothing", "Monogon", "Bigon", "Triangle", "Quadrilateral", "Pentagon", "Hexagon", "Heptagon", "Octagon", "Nonagon", "Decagon"]
     var number = Math.abs(Math.round(document.getElementById("user-number").value));
-    var polygonName = polygons[number];
+    var polygonName;
+    if (number < 10) {
+      polygonName = polygons[number];
+    } else {
+      polygonName = "Wacky-gon";
+    }
     document.getElementById("user-polygon").innerHTML = polygonName;
   }
 }
