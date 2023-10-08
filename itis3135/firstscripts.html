@@ -14,20 +14,17 @@
   <main>
     <p id="condor-perch"></p>
     <h2>First Scripts</h2>
-    <script>
-      var date = new Date();
-      var currentHour = date.getHours() >= 12 ? date.getHours() - 12 : date.getHours();
-      var currentTOD = date.getHours() >= 12 ? "PM" : "AM";
-      var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-      var monthsOfTheYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-
-      document.write("<h3>Today is " + currentHour + ":" + date.getMinutes() + currentTOD + " on "
-        + daysOfTheWeek[date.getDay()] + ", " + date.getDate() + " " + monthsOfTheYear[date.getMonth()] + ", "
-        + date.getFullYear() + "</h3>");
-
-    </script>
-
     <form action="#">
+      <script>
+        var date = new Date();
+        var currentHour = date.getHours() >= 12 ? date.getHours() - 12 : date.getHours();
+        var currentTOD = date.getHours() >= 12 ? "PM" : "AM";
+        var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var monthsOfTheYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.write("<h3>Today is " + currentHour + ":" + date.getMinutes() + currentTOD + " on "
+          + daysOfTheWeek[date.getDay()] + ", " + date.getDate() + " " + monthsOfTheYear[date.getMonth()] + ", "
+          + date.getFullYear() + "</h3>");
+      </script>
       <fieldset>
         <label for="user-name">What is your name?<input id="user-name" name="user-name" type="text" size="50"
             required></label>
