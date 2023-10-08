@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Cawley's Gilded Condor &#9884; ITIS3135 &#9884; BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+  <div data-include="components/header.html"></div>
+  <main>
+    <h2>BYO Intro</h2>
+    <h3>Time to BYO Intro page! Please fill out the form below so we can create your page.</h3>
+    <div id="byo-introduction"></div>
+    <form id="form-element" onsubmit="return false;">
+      <fieldset>
+        <label for="name">Name: <input id="name" name="name" type="text" placeholder="Grant Cawley"></label>
+        <label for="mascot">Mascot: <input id="mascot" name="mascot" type="text" placeholder="Gilded Condor"></label>
+      </fieldset>
+      <fieldset>
+        <label id="image-label" for="image-upload">Image: <input id="image-upload" name="image-upload" type="file" accept=".jpg,.jpeg,.png">
+        </label>
+        <label for="caption">Image Caption: <textarea id="caption" name="caption" type="text"
+            placeholder="At the park that bears my name in Chicago, IL."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-bkgnd">Personal Background:<textarea id="personal-bkgnd" name="personal-bkgnd" type="text"
+            placeholder="Grew up in St. Louis, MO and Melbourne, FL, most recently lived in St. Louis and Raleigh, NC before moving to Charlotte in 2022."></textarea></label>
+        <label for="professional-bkgnd">Professional Background: <textarea id="professional-bkgnd"
+            name="professional-bkgnd" type="text"
+            placeholder="Most recently worked as a Web Developer for HopDrive, a tech startup, and Capgemini, a large consulting company."></textarea></label>
+        <label for="academic-bkgnd">Academic Background:<textarea id="academic-bkgnd" name="academic-bkgnd" type="text"
+            placeholder="I graduated with a B.S. in Psychology and Spanish from Saint Louis University in 2018."></textarea></label>
+        <label for="dev-bkgnd">Background in Web Development: <textarea id="dev-bkgnd" name="dev-bkgnd" type="text"
+            placeholder="I got my start in coding through a Web Development bootcamp in 2020-2021, where I learned HTML, CSS, and Javascript. Since then I've focused more on React with Javascript, which is what I used in my first tech position, so I might be rusty with the basics but I have experience!"></textarea></label>
+        <label for="computer-platform">Primary Computer Platform: <textarea id="computer-platform"
+            name="computer-platform" type="text"
+            placeholder="MacOS. All of my development experience is on a Mac, though I'm more used to Windows as a user."></textarea></label>
+      </fieldset>
+      <fieldset id="course-field">
+        <p>Course List</p>
+        <button type="button" onclick="addCourse();">Add a Course</button>
+      </fieldset>
+      <fieldset>
+        <label for="funny-thing">Funny Thing: <textarea id="funny-thing" name="funny-thing" type="text"
+            placeholder="I love to cook, I'm not trained or even that great at it but I love meal prepping and making food myself."></textarea></label>
+        <label for="other">Anything Else? <textarea id="other" name="other" type="text"
+            placeholder="At home I use a PC keyboard with my Macbook, which makes remembering the keys even more confusing."></textarea></label>
+      </fieldset>
+      <fieldset>
+        <p>I understand that what is on this page is not password protected and I will not put anything here that I
+          don't want publicly available.</p>
+        <label for="agree">I Agree<input id="agree" name="agree" type="checkbox"></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" onclick="submitForm();">
+      <input id="reset" type="button" value="Reset" onclick="resetForm();">
+    </form>
+
+  </main>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/include.js"></script>
+  <script src="scripts/survey.js"></script>
+
+</body>
+
+</html>

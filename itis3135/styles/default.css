@@ -29,7 +29,8 @@ a {
   text-decoration: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: maroon;
 }
 
@@ -77,14 +78,13 @@ figure tr:nth-child(even) {
 }
 
 form {
-  width: 40vw;
+  width: 50vw;
   margin: 0 auto;
   padding-bottom: 2em;
 }
 
 form p {
   margin: 4px;
-  text-align: center;
 }
 
 fieldset {
@@ -98,41 +98,57 @@ fieldset:last-of-type {
 }
 
 label {
-  margin: 5px 0;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: small;
 }
 
-input[type=text],
-input[type=tel],
-input[type=email],
-input[type=number],
 textarea {
-  display: block;
+  resize: vertical;
+  height: 50px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
   width: 100%;
   background-color: rgb(211, 211, 182);
   border: none;
-  margin: 4px;
+  margin-top: 4px;
+  font-family: sans-serif;
 }
 
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-input[type=submit],
-input[type=reset],
-input[type=button],
+input[type="file"] {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input::file-selector-button,
 button {
   background-color: navy;
   color: aliceblue;
+  margin-bottom: 5px;
   min-width: 150px;
   min-height: 30px;
 }
 
 .button-group {
   display: block;
-  width: 100%
+  width: 100%;
 }
 
 .alert-box {
@@ -143,7 +159,7 @@ button {
 
 .golden-button {
   background-color: gold;
-  border: 4px solid darkgoldenrod ;
+  border: 4px solid darkgoldenrod;
   color: darkgoldenrod;
 }
 
@@ -154,4 +170,12 @@ section:not(:last-child) {
 
 #user-greeting {
   text-align: center;
+}
+
+.delete-button {
+  background-color: maroon;
+}
+.return-button {
+  display: block;
+  margin: 10px auto;
 }
