@@ -4,7 +4,7 @@ body {
   background-color: #424242;
   color: #feffea;
   margin: 0;
-  font-family: sans-serif;
+  font-family:'Carrois Gothic', sans-serif;
 }
 
 main {
@@ -45,21 +45,31 @@ header nav a {
   display: block;
 }
 
-header nav a:hover {
+header nav a:not(.nav-icon):hover {
   background-color: #292929;
   color: #feffea;
   font-style: italic;
-
 }
 
 .nav-icon {
+  font-size: 25px;
   padding: 15px 20px;
   float: left;
   font-family: "La Belle Aurore", cursive;
-  font-size: 25px;
+}
+
+.nav-icon:hover {
+  font-size: 35px;
+  padding-top: 7px;
+  padding-bottom: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #292929;
+
 }
 
 .nav-link {
+  font-size: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-right: 20px;
@@ -68,7 +78,10 @@ header nav a:hover {
 }
 
 .banner {
-  padding: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
   background-color: #525252;
 }
 
@@ -78,7 +91,6 @@ footer {
 }
 
 footer nav a {
-  font-family: "Oswald", sans-serif;
   font-size: large;
   height: 30px;
   padding: 10px;
