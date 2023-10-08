@@ -1,38 +1,103 @@
+/* https://coolors.co/fcfc62-feffea-c9c9c9-424242-1f1f1f */
+
 body {
-  background-color: #202C39;
-  color: #F2D492;
-  margin-left: 100px;
-  margin-right: 100px;
+  background-color: #424242;
+  color: #feffea;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+main {
+  margin-top: 70px;
 }
 
 h1,
 h2,
-h3,
-header,
-footer {
-  font-family: serif;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  color: #F29559;
+h3 {
+  color: #fcfc62;
+  font-family: "Oswald", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-a:link, a:visited {
-  color: #12A592;
-  font-style: italic;
+a:link,
+a:visited,
+a:active {
+  color: #fcfc62;
 }
 
 a:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 
-a:active {
-  color: #0d796b;
+header nav {
+  background-color: #1f1f1f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px #333333;
 }
 
+header nav a {
+  height: 30px;
+  display: block;
+}
+
+header nav a:hover {
+  background-color: #292929;
+  color: #feffea;
+  font-style: italic;
+
+}
+
+.nav-icon {
+  padding: 15px 20px;
+  float: left;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 25px;
+}
+
+.nav-link {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: right;
+}
+
+.banner {
+  padding: 2vh;
+  background-color: #525252;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer nav a {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  height: 30px;
+  padding: 10px;
+}
+
+footer nav a:hover {
+  font-style: italic;
+  background-color: #525252;
+  box-shadow: 1px 1px 2px #5C5C5C;
+}
+
+footer p {
+  margin: 20px;
+  font-size: larger;
+  font-family: "La Belle Aurore", cursive;
+}
+
+/* .card {
+  padding: 2vh;
+  background-color: #525252;
+  text-align: center;
+} */
