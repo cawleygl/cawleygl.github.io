@@ -80,8 +80,8 @@ header nav a:not(.nav-icon):hover {
 .banner {
   padding-top: 2vh;
   padding-bottom: 2vh;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   background-color: #525252;
 }
 
