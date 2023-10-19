@@ -207,7 +207,7 @@ ul {
     padding-right: 150px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 2000px) {
   .title-banner {
     padding-left: 300px;
     padding-right: 300px;
@@ -215,6 +215,17 @@ ul {
   .text-banner {
     padding-left: 300px;
     padding-right: 300px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .title-banner {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+  .text-banner {
+    padding-left: 400px;
+    padding-right: 400px;
+    min-height: 550px;
   }
 }
 
@@ -291,13 +302,23 @@ a.card-repo {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 1400px) {
   figure {
     float: right;
     margin: 20px;
   }
   #profile-photo {
-    width: 200px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  figure {
+    float: right;
+    margin: 20px;
+  }
+  #profile-photo {
+    height: 500px;
   }
 }
 
