@@ -302,7 +302,7 @@ a.card-repo {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 1400px) {
+@media screen and (min-width: 576px) and (max-width: 2000px) {
   figure {
     float: right;
     margin: 20px;
@@ -312,7 +312,7 @@ a.card-repo {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2000px) {
   figure {
     float: right;
     margin: 20px;
