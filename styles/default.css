@@ -1,14 +1,19 @@
 /* https://coolors.co/fcfc62-feffea-c9c9c9-424242-1f1f1f */
+html,
+body {
+  min-height: calc(100vh - 83px);
+}
 
 body {
   background-color: #424242;
   color: #feffea;
   margin: 0;
-  font-family:'Carrois Gothic', sans-serif;
+  font-family: "Carrois Gothic", sans-serif;
 }
 
 main {
-  margin-top: 70px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 h1,
@@ -19,6 +24,7 @@ h3 {
 }
 
 a {
+  color: #fcfc62;
   text-decoration: none;
 }
 
@@ -30,14 +36,16 @@ a:active {
 
 a:hover {
   cursor: pointer;
+  color: #feffea;
 }
 
 header nav {
-  background-color: #1f1f1f;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 2px #333333;
+  z-index: 10;
+  background-color: #1f1f1f;
+  box-shadow: 0px 5px 4px rgba(31, 31, 31, 0.5);
 }
 
 header nav a {
@@ -45,31 +53,38 @@ header nav a {
   display: block;
 }
 
-header nav a:not(.nav-icon):hover {
-  background-color: #292929;
-  color: #feffea;
-  font-style: italic;
+footer {
+  margin: 10px;
+  background-color: #1f1f1f;
+  border: 2px inset #1f1f1f;
+  position: sticky;
+  top: 100vh;
+  text-align: center;
 }
 
-.nav-icon {
-  font-size: 25px;
-  padding: 15px 20px;
-  float: left;
+footer nav {
+  padding: 5px;
+}
+
+footer nav a {
+  font-size: small;
+  display: inline-block;
+  padding: 5px;
+  margin: 1px;
+}
+
+footer p {
+  margin: 0;
+  font-size: larger;
   font-family: "La Belle Aurore", cursive;
 }
 
-.nav-icon:hover {
-  font-size: 35px;
-  padding-top: 7px;
-  padding-bottom: 23px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #292929;
-
+ul {
+  list-style-type: square;
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: large;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-right: 20px;
@@ -77,39 +92,217 @@ header nav a:not(.nav-icon):hover {
   float: right;
 }
 
-.banner {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  background-color: #525252;
+.nav-link:hover,
+#nav-icon:hover {
+  background-color: #292929;
+  color: #feffea;
 }
 
-footer {
-  margin-top: 40px;
-  text-align: center;
-}
-
-footer nav a {
-  font-size: large;
-  height: 30px;
-  padding: 10px;
-}
-
-footer nav a:hover {
-  font-style: italic;
-  background-color: #525252;
-  box-shadow: 1px 1px 2px #5C5C5C;
-}
-
-footer p {
-  margin: 20px;
-  font-size: larger;
+#nav-icon {
+  font-size: 25px;
+  padding: 15px 20px;
+  float: left;
   font-family: "La Belle Aurore", cursive;
 }
 
-/* .card {
-  padding: 2vh;
+@media screen and (min-width: 768px) {
+  #nav-hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav-hamburger {
+    color: #fcfc62;
+    font-size: large;
+    height: 30px;
+    font-size: 35px;
+    padding-top: 7px;
+    padding-bottom: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+  }
+  #nav-hamburger:hover {
+    background-color: #292929;
+    cursor: pointer;
+    color: #feffea;
+  }
+
+  .nav-link {
+    width: 100%;
+    float: left;
+  }
+
+  .closed {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+.title-banner,
+.text-banner {
   background-color: #525252;
+  margin-bottom: 20px;
+}
+
+.text-banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 350px;
+}
+
+@media screen and (max-width: 576px) {
+  .title-banner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .text-banner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .title-banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .title-banner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-banner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .title-banner {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .text-banner {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .title-banner {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .text-banner {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .title-banner {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .text-banner {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.card-group {
+  display: block;
   text-align: center;
-} */
+  margin-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #525252;
+}
+.card-group-title {
+  display: block;
+  padding-top: 10px;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 200px;
+  height: 225px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #c9c9c9;
+  color: #1f1f1f;
+  text-align: center;
+  box-shadow: 5px 5px 4px rgba(31, 31, 31, 0.5);
+  border: 2px solid #1f1f1f;
+}
+
+.card-title {
+  font-size: larger;
+  font-family: "Oswald", sans-serif;
+  margin: 5px;
+}
+
+.card-content {
+  margin: 4px;
+}
+
+.card > a {
+  position: absolute;
+  bottom: 5px;
+  padding: 6px;
+  border: 2px solid #1f1f1f;
+  background-color: #1f1f1f;
+}
+
+a.card-app {
+  right: 6%;
+}
+a.card-repo {
+  left: 6%;
+}
+
+.card > a:hover {
+  box-shadow: 3px 3px 2px rgba(31, 31, 31, 0.5);
+  background-color: #1f1f1f;
+}
+
+#profile-photo {
+  border: 5px inset #fcfc62;
+}
+
+@media screen and (max-width: 576px) {
+  figure {
+    margin: 20px;
+  }
+  #profile-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  figure {
+    float: right;
+    margin: 20px;
+  }
+  #profile-photo {
+    width: 200px;
+  }
+}
+
+figcaption {
+  color: #c9c9c9;
+  font-style: italic;
+  text-align: center;
+}

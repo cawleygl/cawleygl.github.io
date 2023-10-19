@@ -9,34 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=La+Belle+Aurore&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script src="scripts/default.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="/#" class="nav-icon">GC</a>
-      <a href="/itis3135/" class="nav-link">ITIS 3135 Course</a>
-    </nav>
-  </header>
+  <div data-include="components/header.html"></div>
   <main>
-    <div class="banner">
+    <div class="title-banner">
       <h1>Grant Cawley's Github Pages</h1>
       <p>Welcome!</p>
     </div>
-    <!-- <div class="card">Card Content</div> -->
+    <section class="text-banner">
+      <h2><a href="/itis3135/">Click Here to go to my ITIS 3135 Course</a></h2>
+    </section>
   </main>
-
-  <footer>
-    <nav>
-      <a href="https://webpages.charlotte.edu/gcawley/">CLT Webspace</a>
-      <a href="https://github.com/cawleygl">Github</a>
-      <a href="https://cawleygl.github.io/">Github.io</a>
-      <a href="https://www.freecodecamp.org/cawleygl">freeCodeCamp</a>
-      <a href="https://www.codecademy.com/profiles/cawleygl">Codecademy</a>
-      <a href="https://www.linkedin.com/in/grant-l-cawley/">LinkedIn</a>
-    </nav>
-    <p>Grant Cawley &copy;2023</p>
-  </footer>
+  <div data-include="components/footer.html"></div>
+  <script src="scripts/include.js"></script>
 </body>
 
 </html>
