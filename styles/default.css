@@ -152,8 +152,12 @@ ul {
 .text-banner {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#about-text {
   min-height: 350px;
 }
+
 
 @media screen and (max-width: 576px) {
   .title-banner {
@@ -225,6 +229,8 @@ ul {
   .text-banner {
     padding-left: 400px;
     padding-right: 400px;
+  }
+  #about-text {
     min-height: 550px;
   }
 }
