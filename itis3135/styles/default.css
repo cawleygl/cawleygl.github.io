@@ -1,3 +1,7 @@
+body, html {
+  margin: 0;
+}
+
 body {
   background-color: lightgoldenrodyellow;
   color: navy;
@@ -5,6 +9,11 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   h1 {
     font-size: 1.5em;
   }
@@ -18,7 +27,6 @@ body {
   form {
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -96,7 +104,7 @@ a:visited {
 }
 
 a:hover {
-  font-style: italic;
+  color: rgb(197, 29, 29);
   cursor: pointer;
 }
 
@@ -186,8 +194,8 @@ button {
   background-color: navy;
   color: aliceblue;
   margin-bottom: 5px;
-  min-width: 150px;
-  min-height: 30px;
+  width: 150px;
+  height: 30px;
 }
 
 .button-group {
@@ -212,7 +220,7 @@ section:not(:last-child) {
   margin-bottom: 15px;
 }
 
-#user-greeting {
+#calc-message {
   text-align: center;
 }
 
@@ -223,4 +231,64 @@ section:not(:last-child) {
 .return-button {
   display: block;
   margin: 10px auto;
+}
+
+#calc-container {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgb(211, 211, 182);
+  border: 5px outset rgb(211, 211, 182);
+}
+
+.calc-button {
+  font-size: larger;
+}
+
+.calc-button:hover {
+  background-color: rgb(63, 63, 145);
+}
+
+#calc-display {
+  font-size: larger;
+  background-color: aliceblue;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  #calc-container {
+    width: 240px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #calc-display {
+    width: 210px;
+  }
+  .calc-button {
+    width: 50px;
+    height: 50px;
+  }
+  #calc-equals {
+    width: 215px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #calc-container {
+    width: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #calc-display {
+    width: 410px;
+  }
+  .calc-button {
+    width: 100px;
+  }
+  #calc-equals {
+    width: 415px;
+  }
 }
