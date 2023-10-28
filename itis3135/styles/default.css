@@ -73,13 +73,13 @@ footer {
   text-align: center;
 }
 
+footer {
+    margin-top: 10px;
+}
+
 h3 {
   color: maroon;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-footer {
-  margin-top: 4px;
 }
 
 figure {
@@ -166,6 +166,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="number"],
+select, 
 textarea {
   width: 100%;
   background-color: rgb(211, 211, 182);
@@ -193,6 +194,7 @@ input::file-selector-button,
 button {
   background-color: navy;
   color: aliceblue;
+  margin-top: 5px;
   margin-bottom: 5px;
   width: 150px;
   height: 30px;
@@ -291,4 +293,8 @@ section:not(:last-child) {
   #calc-equals {
     width: 415px;
   }
+}
+
+.hidden {
+    display: none;
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Cawley's Gilded Condor &#9884; ITIS3135 &#9884; Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>Arrays</h2>
+        <form action="#">
+            <label for="select-employee">Choose an Employee</label>
+            <select id="select-employee">
+                <option disabled selected>Employees</option>
+                <option value="75000">Tyler Rivera</option>
+                <option value="35000">Angela Marcus</option>
+                <option value="25000">Ashley Osbourne</option>
+                <option value="25000">Richard Bolton</option>
+                <option value="20000">Simon Myers</option>
+                <option value="20000">Jamie Everton</option>
+                <option value="20000">Boyle McCoy</option>
+            </select>
+            <h3>Add an Employee and Salary</h3>
+            <label for="enter-name">Name<input name="enter-name" id="enter-name" type="text"></label>
+            <label for="enter-salary">Salary<input name="enter-salary" id="enter-salary" type="text"
+                    placeholder="$"></label>
+            <input id="addSalary" type="button" value="Add Salary">
+            <input id="displayResults" type="button" value="Display Results">
+            <input id="displaySalary" type="button" value="Display Salary">
+        </form>
+        <div id="results"></div>
+        <table id="results-table" class="hidden"></table>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+
+</html>
