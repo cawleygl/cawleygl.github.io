@@ -1,0 +1,22 @@
+.paper {
+  display: block;
+  min-height: 375px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+button,
+.product-purchase {
+  display: inline-block;
+  width: 175px;
+  margin-bottom: 4%;
+  padding-top: 10px;
+}
+
+.product-image {
+  width: 80%;
+  box-shadow: 4px 7px var(--MD-yellow);
+  margin-bottom: 20px;
+}

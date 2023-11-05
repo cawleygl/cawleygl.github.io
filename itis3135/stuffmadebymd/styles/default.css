@@ -1,0 +1,194 @@
+/* https://coolors.co/d7cbfd-fcd66c-fea1c7-ffbb60-8b1e3f */
+
+:root {
+  --MD-purple: #d7cbfd;
+  --MD-purple-dark: #c2b0fc;
+  --MD-yellow: #fcd66c;
+  --MD-pink-light: #ffd5e6;
+  --MD-pink: #fea1c7;
+  --MD-pink-dark: #c91f66;
+  --MD-orange: #ffbb60;
+  --MD-white: #fefcf5;
+  --MD-shadow: rgba(70, 70, 70, 0.2);
+  --MD-gray: rgb(70, 70, 70);
+}
+
+body {
+  background-color: #d7cbfd;
+  margin-top: 90px;
+  font-family: "Katibeh", serif;
+  color: var(--MD-gray);
+}
+
+h1 {
+  font-family: "Ms Madi", cursive;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--MD-pink-dark);
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+button,
+.product-purchase {
+  border: none;
+  border-radius: 30px;
+  font-family: "Katibeh", serif;
+  font-size: larger;
+  background-color: var(--MD-purple);
+  color: var(--MD-gray);
+  box-shadow: 0 2px 3px var(--MD-shadow);
+}
+
+button:hover,
+.product-purchase:hover {
+  cursor: pointer;
+  background-color: var(--MD-pink);
+  color: var(--MD-white);
+}
+
+figcaption {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--MD-white);
+  width: 100%;
+  z-index: 5;
+  height: 70px;
+  box-shadow: 0 2px 3px var(--MD-shadow);
+}
+
+.nav-link {
+  float: right;
+  color: var(--MD-gray);
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-link:hover {
+  background-color: var(--MD-pink);
+  color: var(--MD-white);
+}
+
+#nav-logo {
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+  margin: 0;
+}
+
+#nav-logo:hover {
+  background-color: var(--MD-pink);
+}
+
+.nav-logo-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50px;
+}
+
+.invisible {
+  display: none;
+}
+
+#collapse-button,
+#collapse-arrow {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    text-align: center;
+  }
+
+  #collapse-button {
+    display: block;
+    float: right;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  #collapse-button.down {
+    padding-top: 26px;
+    padding-bottom: 29px;
+  }
+
+  #collapse-button.up {
+    padding-top: 29px;
+    padding-bottom: 26px;
+  }
+
+  #collapse-arrow {
+    display: block;
+    border: solid var(--MD-gray);
+    border-width: 0 3px 3px 0;
+    padding: 6px;
+  }
+
+  #collapse-arrow.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  #collapse-arrow.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  #collapse-button:hover {
+    cursor: pointer;
+    background-color: var(--MD-pink);
+    color: var(--MD-white);
+  }
+
+  #collapse-button:hover #collapse-arrow {
+    display: block;
+    border: solid var(--MD-white);
+    border-width: 0 3px 3px 0;
+    padding: 6px;
+  }
+
+  .nav-link {
+    background-color: var(--MD-white);
+    width: 100%;
+    float: left;
+  }
+
+  .closed {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+.paper {
+  text-align: center;
+  background-color: var(--MD-white);
+  box-shadow: 17px 15px var(--MD-pink);
+}
+
+.paper h1 {
+  margin: 0 auto;
+}

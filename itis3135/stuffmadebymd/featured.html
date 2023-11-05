@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuff Made by MD || Featured</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/featured.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Ms+Madi&display=swap" rel="stylesheet">
+    <script src="scripts/default.js"></script>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <div class="paper">
+            <h1>Featured</h1>
+            <div class="product">
+                <div class="left-arrow-button" onclick="navigateFeaturedProducts('-');">&#8678;</div>
+                <div class="right-arrow-button small" onclick="navigateFeaturedProducts('+');">&#8680;</div>
+                <div class="product-content">
+                    <figure>
+                        <a id="featured-product-page-link" href="getawaycarmotelkeychain.html"><h2 id="featured-product-title" class="product-title">Getaway Car Motel Keychain</h2></a>
+                        <img id="featured-product-image" class="product-image"
+                            src="https://i.etsystatic.com/26350705/r/il/6505f5/5028452601/il_794xN.5028452601_srhc.jpg"
+                            alt="Getaway Car Keychain">
+                    </figure>
+                    <p id="featured-product-description" class="product-description">"Getaway car" vinyl lettering motel
+                        keychain with gold hardware. Perfect for a thoughtful gift :)</p>
+                    <div class="availability">
+                        <p class="product-availability">Available Now!</p>
+                        <a target="_blank"
+                            href="https://www.etsy.com/listing/1498723679/getaway-car-motel-keychain?click_key=610d9573f4e04a5978d5227fae8f7596fb217407%3A1498723679&click_sum=eac7dc62&ref=shop_home_feat_3"
+                            id="featured-product-purchase" class="product-purchase">Purchase</a>
+                    </div>
+                </div>
+                <div class="right-arrow-button large" onclick="navigateFeaturedProducts('+');">&#8680;</div>
+            </div>
+
+
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+
+</html>

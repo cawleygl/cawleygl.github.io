@@ -1,0 +1,143 @@
+.product {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 15% 70% 15%;
+  background-color: var(--MD-orange);
+  box-shadow: 8px -5px var(--MD-yellow);
+}
+
+h1 {
+  padding: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .paper {
+    display: block;
+    min-height: 375px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .product {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button,
+  .product-purchase {
+    width: 100px;
+    height: 12px;
+    margin-left: 2%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  .paper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 60vh;
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .product {
+    width: 300px;
+    height: 300px;
+  }
+
+  button,
+  .product-purchase {
+    width: 100px;
+    height: 12px;
+    margin: 10px;
+    padding: 3%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  .paper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 60vh;
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+  .product {
+    font-size: 1.5em;
+    width: 400px;
+    height: 400px;
+  }
+
+  button,
+  .product-purchase {
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+    padding: 3%;
+  }
+}
+
+.product figure {
+  display: block;
+  margin: 0;
+  margin-top: 10%;
+  font-size: larger;
+}
+
+.product-availability,
+.product-purchase {
+  display: inline-block;
+}
+
+.description,
+.availability {
+  grid-column: 1 / 3;
+}
+
+.product-image {
+  width: 80%;
+  grid-row: 1 / 3;
+  grid-column: 2 / 2;
+  box-shadow: 4px 7px var(--MD-yellow);
+}
+
+.product-description {
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 0;
+  margin: 0;
+}
+
+.product-title {
+  margin: 0;
+  padding-top: 15%;
+  font-size: 1.2em;
+}
