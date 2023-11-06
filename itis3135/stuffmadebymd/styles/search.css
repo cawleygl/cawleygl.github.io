@@ -32,13 +32,18 @@ form {
 }
 
 #search-results {
+  width: 100%;
   margin-top: 10px;
   background-color: var(--MD-yellow);
   box-shadow: -6px 8px var(--MD-purple);
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+.display {
+  display: block;
 }
 
 .paper {
@@ -53,11 +58,6 @@ form {
   padding-bottom: 20px;
 }
 
-#search-results {
-  display: block;
-  width: 100%;
-}
-
 .result {
   display: inline;
   width: 100%;
@@ -66,7 +66,6 @@ form {
 .product-name {
   width: 80%;
 }
-
 
 button,
 .product-purchase {
@@ -85,14 +84,13 @@ button,
   }
   #search-results {
     padding: 5px;
-    text-align: center
+    text-align: center;
   }
 
   .product-purchase {
     margin: 0;
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   h1 {

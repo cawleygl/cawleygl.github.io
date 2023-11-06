@@ -79,7 +79,11 @@ function searchProducts() {
     var term = document.getElementById("search-term").value;
     var results = document.getElementById("search-results");
     var resultFlag = false;
-    results.classList.remove("hidden");
+    // Show results element on first search
+    if (!results.classList.contains("display")) {
+        results.classList.remove("hidden");
+        results.classList.add("display");
+    }
     results.innerHTML = "";
 
     for (let i = 0; i < productInfo.length; i++) {
