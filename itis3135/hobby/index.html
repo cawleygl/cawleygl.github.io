@@ -50,6 +50,24 @@
             font-family: Roboto Condensed, sans-serif;
         }
 
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+
+        h1,
+        h2 {
+            text-align: center;
+            font-family: Carter One, sans-serif;
+            color: var(--header);
+            text-shadow: 5px 5px 0 var(--shadow);
+        }
 
         a {
             text-decoration: none;
@@ -61,15 +79,6 @@
             color: var(--accent);
         }
 
-        h1,
-        h2 {
-            text-align: center;
-            font-family: Carter One, sans-serif;
-            color: var(--header);
-            text-shadow: 5px 5px 0 var(--shadow);
-        }
-
-
         figure {
             text-align: center;
             margin: 50px;
@@ -80,14 +89,20 @@
             border: 5px outset var(--shadow);
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
+        table,
+        th,
+        td {
+            border: 3px solid var(--accent);
+            border-collapse: collapse;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 40px;
+        table {
+            width: 100%;
+        }
+
+        th {
+            background-color: var(--accent);
+            color: var(--background);
         }
 
         footer>p,
@@ -138,7 +153,7 @@
         }
     </style>
 
-    <script type="text/javascript">
+    <script>
         var changePage = function (section) {
             // Change title
             document.title = "Fantasy Football - " + section;
@@ -160,9 +175,8 @@
 
 <body>
     <header>
-        <button onclick="changePage('Home');">Home</button>
-        <button onclick="changePage('Who');">Who?</button>
         <button onclick="changePage('What');">What?</button>
+        <button onclick="changePage('Who');">Who?</button>
         <button onclick="changePage('When');">When?</button>
         <button onclick="changePage('Where');">Where?</button>
         <button onclick="changePage('Why');">Why?</button>
@@ -170,8 +184,8 @@
     </header>
     <main>
         <h1>Fantasy Football</h1>
-        <section id="home" class="selected">
-            <h2>Home</h2>
+        <section id="what" class="deselected">
+            <h2>What?</h2>
             <figure>
                 <img src="images/football-jeandaniel-francoeur.jpg" alt="An American football in the grass">
                 <figcaption>A pigskin on the gridiron.</figcaption>
@@ -181,7 +195,8 @@
                 try and move the ball to the other end of the field, known as their opponent's end zone. The highest
                 league of professional football is known as the National Football League (NFL), and this league has
                 become so popular and influential that it (among other sports) has created a spin-off game called
-                Fantasy Football. In Fantasy Football, spectators gather to “draft” professional football players to
+                Fantasy Football.</p>
+            <p>In Fantasy Football, spectators gather to “draft” professional football players to
                 their fantasy football teams. Then, as the players play for their respective professional teams, a
                 predetermined algorithm interprets the play of each player into a number of Fantasy points. Since NFL
                 matchups are scheduled once per week, Fantasy teams are matched up against one another, with the team
@@ -189,10 +204,10 @@
                 football leagues require an entry fee that is paid out to the winningest teams at season's end.
             </p>
             <blockquote>
-                <p>Those who cannot play, coach. Those who cannot coach, pretend like you're coaching your own team.</p>
-                <p>-Grant Cawley</p>
+                <p>Those who cannot play, coach. Those who cannot coach, pretend like they're coaching a team they made
+                    up.</p>
+                <p> - Grant Cawley</p>
             </blockquote>
-
         </section>
         <section id="who" class="deselected">
             <h2>Who?</h2>
@@ -219,66 +234,173 @@
                 is injured.</p>
 
         </section>
-        <section id="what" class="deselected">
-            <h2>What?</h2>
-            <figure>
-                <img src="images/football-run-pixabay.jpg" alt="A football player running the ball">
-                <figcaption>A running play.</figcaption>
-            </figure>
-            <h3>What is going on?</h3>
-            <p>If you're still confused about the rules of American football, and you really think you need to know the absolute basics to get your bearings, don't fret. Here's some really basic stuff so that watching games on TV isn't an absolute nightmare.</p>
-            <ol>
-                <li>The ball starts at the line of scrimmage. That's where most of the players line up.</li>
-                <li>The player on the offensive team who gets the ball first is called the Quarterback.</li>
-                <li>The Quarterback can choose to throw the ball to a player past the line of scrimmage, but once they do so, no other player can pass the ball forwards again for that play.</li>
-                <li>The player that catches the ball downfield is (usually) called the Wide Receiver.</li>
-                <li>The Quarterback can run the ball past the line of scrimmage, or give the ball up to another player to run it. This player is (usually) called the Running Back.</li>
-                <li>The offensive team has 4 chances to move the ball a total of 10 yards. 10 yards is demarcated on television with a yellow line, and in real-life with a big orange pole (someone should be holding it).</li>
-                <li>These chances are referred to as “downs,” and moving the ball past the 10-yard marker is called a “first down.”</li>
-            </ol>
-
-        </section>
         <section id="when" class="deselected">
-            <h2>When</h2>
+            <h2>When?</h2>
             <figure>
                 <img src="images/touchdown-joe-calomeni.jpg" alt="A football player diving for a touchdown">
                 <figcaption>Touchdown!</figcaption>
             </figure>
+            <p>The best time to get started is before the football season begins in September. However, some leagues
+                allow you to get started during the season, so don't worry if you've missed the deadline!</p>
+            <h3>2023 NFL Regular Season</h3>
+            <table>
+                <tr>
+                    <th>Week #</th>
+                    <th>Dates</th>
+                </tr>
+                <tr>
+                    <td>Week 1</td>
+                    <td>Sept 7-11</td>
+                </tr>
+                <tr>
+                    <td>Week 2</td>
+                    <td>Sept 14-18</td>
+                </tr>
+                <tr>
+                    <td>Week 3</td>
+                    <td>Sept 21-25</td>
+                </tr>
+                <tr>
+                    <td>Week 4</td>
+                    <td>Sept 28 - Oct 2</td>
+                </tr>
+                <tr>
+                    <td>Week 5</td>
+                    <td>Oct 5-9</td>
+                </tr>
+                <tr>
+                    <td>Week 6</td>
+                    <td>Oct 12-16</td>
+                </tr>
+                <tr>
+                    <td>Week 7</td>
+                    <td>Oct 19-23</td>
+                </tr>
+                <tr>
+                    <td>Week 8</td>
+                    <td>Oct 26-30</td>
+                </tr>
+                <tr>
+                    <td>Week 9</td>
+                    <td>Nov 2-6</td>
+                </tr>
+                <tr>
+                    <td>Week 10</td>
+                    <td>Nov 9-13</td>
+                </tr>
+                <tr>
+                    <td>Week 11</td>
+                    <td>Nov 16-20</td>
+                </tr>
+                <tr>
+                    <td>Week 12</td>
+                    <td>Nov 23-27</td>
+                </tr>
+                <tr>
+                    <td>Week 13</td>
+                    <td>Nov 30 - Dec 4</td>
+                </tr>
+                <tr>
+                    <td>Week 14</td>
+                    <td>Dec 7-11</td>
+                </tr>
+                <tr>
+                    <td>Week 15</td>
+                    <td>Dec 14-18</td>
+                </tr>
+                <tr>
+                    <td>Week 16</td>
+                    <td>Dec 21-25</td>
+                </tr>
+                <tr>
+                    <td>Week 17</td>
+                    <td>Dec 28-31</td>
+                </tr>
+                <tr>
+                    <td>Week 18</td>
+                    <td>Jan 7-11</td>
+                </tr>
+
+            </table>
+
         </section>
         <section id="where" class="deselected">
-            <h2>Where</h2>
+            <h2>Where?</h2>
             <figure>
                 <img src="images/snap-pixabay.jpg" alt="Football players lining up before a snap">
                 <figcaption>The line of scrimmage (as previously discussed).</figcaption>
             </figure>
-            <div></div>
-            <div></div>
-            <div></div>
+            <h3>Where can I play?</h3>
+            <p>I'm so glad you asked!</p>
+            <ul>
+                <li><a href="https://football.fantasysports.yahoo.com/">Yahoo</a></li>
+                <li><a href="https://fantasy.espn.com/">ESPN</a></li>
+                <li><a href="https://fantasy.nfl.com/">NFL.com</a></li>
+                <li><a href="https://www.cbssports.com/fantasy/football/">CBS Sports</a></li>
+                <li>... and More!</li>
+            </ul>
+            <h3>Where can I watch the games?</h3>
+            <ul>
+                <li>Restaurants</li>
+                <li>Friends' Homes (with their permission)</li>
+                <li>Just about any public area in the United States with a television!</li>
+            </ul>
         </section>
-        <section id="why" class="deselected">
-            <h2>Why</h2>
+        <section id="why" class="selected">
+            <h2>Why?</h2>
             <figure>
                 <img src="images/referee-pixabay.jpg" alt="A football referee">
                 <figcaption>The referee.</figcaption>
             </figure>
-            <div></div>
-            <div></div>
-            <div></div>
+            <p>If I haven't already made the case for playing Fantasy Football, I'll reiterate. Why play? It's fun! Even
+                if you don't pick up any knowledge on the game or its players, it's a bonding experience for all
+                involved. Play with friends, family, coworkers, or whoever you want to, and take it as seriously (or
+                un-seriously) as you want to. Pick players with cool names, or because their projected Defense-Adjusted
+                Value over Average this season is going to be off the charts. It's just a game about another game!</p>
+            <h3>Potential Benefits Include:</h3>
+            <ul>
+                <li>Meeting new people</li>
+                <li>Getting to know people you've already met</li>
+                <li>Seeing a new side of people you thought you knew</li>
+                <li>Spending time with friends</li>
+                <li>Eating good food</li>
+                <li>Beginning to understand football</li>
+                <li>Discovering that you really like football</li>
+                <li>Learning about interesting football players</li>
+                <li>And much more!</li>
+            </ul>
         </section>
         <section id="how" class="deselected">
-            <h2>How</h2>
+            <h2>How?</h2>
             <figure>
-                <img src="images/jump-pixabay.jpg" alt="A football player with the ball, jumping over a defensive player">
+                <img src="images/jump-pixabay.jpg"
+                    alt="A football player with the ball, jumping over a defensive player">
                 <figcaption>Jumping over the opponent.</figcaption>
             </figure>
-            <div></div>
-            <div></div>
-            <div></div>
+            <p>First and foremost, you should play responsibly if you're putting money down.</p>
+            <p>On another note, if you're still confused about the rules of American football, and you really think
+                you need to know the absolute basics to get your bearings, don't fret. Here's some really basic stuff so
+                that watching games on TV isn't an absolute nightmare.</p>
+            <ol>
+                <li>The ball starts at the line of scrimmage. That's where most of the players line up.</li>
+                <li>The player on the offensive team who gets the ball first is called the Quarterback.</li>
+                <li>The Quarterback can choose to throw the ball to a player past the line of scrimmage, but once they
+                    do so, no other player can pass the ball forwards again for that play.</li>
+                <li>The player that catches the ball downfield is (usually) called the Wide Receiver.</li>
+                <li>The Quarterback can run the ball past the line of scrimmage, or give the ball up to another player
+                    to run it. This player is (usually) called the Running Back.</li>
+                <li>The offensive team has 4 chances to move the ball a total of 10 yards. 10 yards is demarcated on
+                    television with a yellow line, and in real-life with a big orange pole (someone should be holding
+                    it).</li>
+                <li>These chances are referred to as “downs,” and moving the ball past the 10-yard marker is called a
+                    “first down.”</li>
+            </ol>
         </section>
+
 
     </main>
     <footer>
-        <p>Designed by <a href="cawleyandco.com/">Cawley & Company &copy;2023</a>, <a
+        <p>Designed by <a href="../cawleyandco.com/">Cawley & Company &copy;2023</a>, <a
                 href="https://www.freecodecamp.org/certification/cawleygl/responsive-web-design">Certified in JS</a></p>
         <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">Validate HTML</a>
         <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">Validate CSS</a>
