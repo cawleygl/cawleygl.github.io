@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football - Home </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --background: #142052;
+            --shadow: #080D21;
+            --text: #B6DBE2;
+            --header: #4EBC5E;
+            --link: #F3C969;
+            --accent: #E17A51;
+            --football-1: #7F4C39;
+            --football-2: #E9EAEC;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                margin-left: 20vw;
+                margin-right: 20vw;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        body {
+            background-color: var(--background);
+            height: 100vh;
+            color: var(--text);
+            font-family: Roboto Condensed, sans-serif;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: var(--link);
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: var(--accent);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            font-family: Carter One, sans-serif;
+            color: var(--header);
+            text-shadow: 5px 5px 0 var(--shadow);
+        }
+
+
+        figure {
+            text-align: center;
+            margin: 50px;
+        }
+
+        img {
+            max-height: 200px;
+            border: 5px outset var(--shadow);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer>p,
+        figcaption {
+            font-style: italic;
+            font-size: 0.8em;
+        }
+
+        blockquote {
+            display: block;
+            border-top: 2px outset var(--shadow);
+            border-bottom: 2px inset var(--shadow);
+            padding: 25px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        button,
+        #validation_link_html,
+        #validation_link_css {
+            display: inline-block;
+            background-color: var(--football-1);
+            color: var(--football-2);
+            border: 2px solid var(--football-2);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 5px;
+            box-shadow: 0px 3px 4px var(--shadow);
+            border-radius: 50%;
+        }
+
+        button:hover,
+        #validation_link_html:hover,
+        #validation_link_css:hover {
+            transform: translate(2px, -2px);
+            box-shadow: -3px 6px 4px var(--shadow);
+
+        }
+
+        .deselected {
+            display: none;
+        }
+
+        .selected {
+            display: block;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var changePage = function (section) {
+            // Change title
+            document.title = "Fantasy Football - " + section;
+            // Show section and hide others
+            var sections = document.getElementsByTagName("section");
+            for (let i = 0; i < sections.length; i++) {
+                if (section.toUpperCase() == sections[i].id.toUpperCase()) {
+                    sections[i].classList.add("selected");
+                    sections[i].classList.remove("deselected");
+                } else {
+                    sections[i].classList.add("deselected");
+                    sections[i].classList.remove("selected");
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <button onclick="changePage('Home');">Home</button>
+        <button onclick="changePage('Who');">Who?</button>
+        <button onclick="changePage('What');">What?</button>
+        <button onclick="changePage('When');">When?</button>
+        <button onclick="changePage('Where');">Where?</button>
+        <button onclick="changePage('Why');">Why?</button>
+        <button onclick="changePage('How');">How?</button>
+    </header>
+    <main>
+        <h1>Fantasy Football</h1>
+        <section id="home" class="selected">
+            <h2>Home</h2>
+            <figure>
+                <img src="images/football-jeandaniel-francoeur.jpg" alt="An American football in the grass">
+                <figcaption>A pigskin on the gridiron.</figcaption>
+            </figure>
+            <p>American football is one of the most popular and influential sports in the United States, at both the
+                professional and collegiate levels. In American Football, two teams of 11 players each take the field to
+                try and move the ball to the other end of the field, known as their opponent's end zone. The highest
+                league of professional football is known as the National Football League (NFL), and this league has
+                become so popular and influential that it (among other sports) has created a spin-off game called
+                Fantasy Football. In Fantasy Football, spectators gather to “draft” professional football players to
+                their fantasy football teams. Then, as the players play for their respective professional teams, a
+                predetermined algorithm interprets the play of each player into a number of Fantasy points. Since NFL
+                matchups are scheduled once per week, Fantasy teams are matched up against one another, with the team
+                accumulating the most points that week taking home the victory for their fantasy team. Some fantasy
+                football leagues require an entry fee that is paid out to the winningest teams at season's end.
+            </p>
+            <blockquote>
+                <p>Those who cannot play, coach. Those who cannot coach, pretend like you're coaching your own team.</p>
+                <p>-Grant Cawley</p>
+            </blockquote>
+
+        </section>
+        <section id="who" class="deselected">
+            <h2>Who?</h2>
+            <figure>
+                <img src="images/football-players-football-wife.jpg" alt="Football players at the line of scrimmage">
+                <figcaption>Football players at the line of scrimmage.</figcaption>
+            </figure>
+            <h3>Who Should Play Fantasy Football?</h3>
+            <p>The answer? Anyone and everyone! Knowledge of the game of football is secondary in Fantasy Football, and
+                is not necessary to get started and have fun. Starting off with knowledge helps, but you can easily get
+                the basics down in no time. Learning from your mistakes is part of the fun, and playing in a league with
+                fellow beginners is a great way to start some friendly, low-stakes competition with friends or
+                acquaintances. Leagues can even recommend and make decisions for you, so deferring decisions to the
+                computer can give you a starting point if you're stuck in a jam without guidance or knowledge.</p>
+            <h3>Who Should I Draft? Who Should I Start?</h3>
+            <p>Draft the best available player! Most leagues will rank players in order from best to worst as the draft
+                goes on. If you're totally lost, taking the best ranked player available is never a bad call. Overall,
+                you want players who can fill each position, and players with different bye weeks. NFL teams don't play
+                every single week of the season, every so often taking a “bye,” or a week off. If too many of your
+                players share a bye week, you may end up without enough players to fill your roster that week. As the
+                season gets going, play the players who aren't injured. This may seem obvious, but with the physical
+                nature of American football, managing injuries is an important factor if you want to be successful. Make
+                sure you have bench players at the ready, and are checking injury reports if one of your better players
+                is injured.</p>
+
+        </section>
+        <section id="what" class="deselected">
+            <h2>What?</h2>
+            <figure>
+                <img src="images/football-run-pixabay.jpg" alt="A football player running the ball">
+                <figcaption>A running play.</figcaption>
+            </figure>
+            <h3>What is going on?</h3>
+            <p>If you're still confused about the rules of American football, and you really think you need to know the absolute basics to get your bearings, don't fret. Here's some really basic stuff so that watching games on TV isn't an absolute nightmare.</p>
+            <ol>
+                <li>The ball starts at the line of scrimmage. That's where most of the players line up.</li>
+                <li>The player on the offensive team who gets the ball first is called the Quarterback.</li>
+                <li>The Quarterback can choose to throw the ball to a player past the line of scrimmage, but once they do so, no other player can pass the ball forwards again for that play.</li>
+                <li>The player that catches the ball downfield is (usually) called the Wide Receiver.</li>
+                <li>The Quarterback can run the ball past the line of scrimmage, or give the ball up to another player to run it. This player is (usually) called the Running Back.</li>
+                <li>The offensive team has 4 chances to move the ball a total of 10 yards. 10 yards is demarcated on television with a yellow line, and in real-life with a big orange pole (someone should be holding it).</li>
+                <li>These chances are referred to as “downs,” and moving the ball past the 10-yard marker is called a “first down.”</li>
+            </ol>
+
+        </section>
+        <section id="when" class="deselected">
+            <h2>When</h2>
+            <figure>
+                <img src="images/touchdown-joe-calomeni.jpg" alt="A football player diving for a touchdown">
+                <figcaption>Touchdown!</figcaption>
+            </figure>
+        </section>
+        <section id="where" class="deselected">
+            <h2>Where</h2>
+            <figure>
+                <img src="images/snap-pixabay.jpg" alt="Football players lining up before a snap">
+                <figcaption>The line of scrimmage (as previously discussed).</figcaption>
+            </figure>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section id="why" class="deselected">
+            <h2>Why</h2>
+            <figure>
+                <img src="images/referee-pixabay.jpg" alt="A football referee">
+                <figcaption>The referee.</figcaption>
+            </figure>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section id="how" class="deselected">
+            <h2>How</h2>
+            <figure>
+                <img src="images/jump-pixabay.jpg" alt="A football player with the ball, jumping over a defensive player">
+                <figcaption>Jumping over the opponent.</figcaption>
+            </figure>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Designed by <a href="cawleyandco.com/">Cawley & Company &copy;2023</a>, <a
+                href="https://www.freecodecamp.org/certification/cawleygl/responsive-web-design">Certified in JS</a></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">Validate CSS</a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+
+</html>
