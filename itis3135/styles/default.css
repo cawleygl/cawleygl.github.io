@@ -298,3 +298,9 @@ section:not(:last-child) {
 .hidden {
     display: none;
 }
+
+canvas {
+	display: block;
+	margin: 20px auto;
+	border: 4px inset rgb(211, 211, 182);
+}
