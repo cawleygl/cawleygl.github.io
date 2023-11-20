@@ -67,6 +67,7 @@ body {
 
 h1,
 h2,
+h3,
 header,
 footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -79,13 +80,16 @@ footer {
 
 h3 {
   color: maroon;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 figure {
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+figure img {
+	border: 4px outset rgb(211, 211, 182);
 }
 
 figcaption {
