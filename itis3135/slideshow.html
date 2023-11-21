@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grant Cawley's Gilded Condor &#9884; ITIS3135 &#9884; Slideshow</title>
+	<link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+	<div data-include="components/header.html"></div>
+	<main>
+		<h2>Slideshow</h2>
+		<div class="slideshow">
+			<div class="slide">
+				<img class="slide-image" src="images/grass-pixmike.jpg" alt="Grass" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/rainbow-james-wheeler.jpg" alt="Rainbow" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/ant-jimmy-chan.jpg" alt="Ant" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/nightsky-neale-lasalle.jpg" alt="Night" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/trees-johannes-plenio.jpg" alt="Trees" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/car-trace-constant.jpg" alt="Car" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/art-steve-johnson.jpg" alt="Art" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/waterfall-diego-madrigal.jpg" alt="Waterfall" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/ladder-ovan.jpg" alt="Ladder" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/electricity-pixabay.jpg" alt="Electricity" style="width:100%">
+			</div>
+			<div class="slide">
+				<img class="slide-image" src="images/yarn-avni-jain.jpg" alt="Yarn" style="width:100%">
+			</div>
+			<a class="prev" onclick="advanceSlide(-1)">&#10094;</a>
+			<a class="next" onclick="advanceSlide(1)">&#10095;</a>
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+			<div class="thumbnail-row">
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/grass-pixmike.jpg" alt="G - Grass" style="width: 100%" onclick="chooseSlide(0)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/rainbow-james-wheeler.jpg" alt="R - Rainbow" style="width: 100%" onclick="chooseSlide(1)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/ant-jimmy-chan.jpg" alt="A - Ant" style="width: 100%" onclick="chooseSlide(2)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/nightsky-neale-lasalle.jpg" alt="N - Night" style="width: 100%" onclick="chooseSlide(3)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/trees-johannes-plenio.jpg" alt="T - Trees" style="width: 100%" onclick="chooseSlide(4)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/car-trace-constant.jpg" alt="C - Car" style="width: 100%" onclick="chooseSlide(5)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/art-steve-johnson.jpg" alt="A - Art" style="width: 100%" onclick="chooseSlide(6)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/waterfall-diego-madrigal.jpg" alt="W - Waterfall" style="width: 100%" onclick="chooseSlide(7)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/ladder-ovan.jpg" alt="L - Ladder" style="width: 100%" onclick="chooseSlide(8)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/electricity-pixabay.jpg" alt="E - Electricity" style="width: 100%" onclick="chooseSlide(9)">
+				</div>
+				<div class="thumbnail-container">
+					<img class="thumbnail" src="images/yarn-avni-jain.jpg" alt="Y - Yarn" style="width: 100%" onclick="chooseSlide(10)">
+				</div>
+			</div>
+		</div>
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/include.js"></script>
+	<script src="scripts/slideshow.js"></script>
+</body>
+
+</html>
