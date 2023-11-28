@@ -1,12 +1,21 @@
-/* https://coolors.co/fcfc62-feffea-c9c9c9-424242-1f1f1f */
+:root {
+  --dark: #22213b;
+  --text: #22213b;
+  --title: #b83b3f;
+  --link: #2754ae;
+  --white: #fdf3d8;
+  --shade: #fbe7b1;
+  --shadow: rgba(42, 42, 42, 0.5);
+}
+
 html,
 body {
   min-height: calc(100vh - 83px);
 }
 
 body {
-  background-color: #424242;
-  color: #feffea;
+  background-color: var(--white);
+  color: var(--text);
   margin: 0;
   font-family: "Carrois Gothic", sans-serif;
 }
@@ -19,45 +28,65 @@ main {
 h1,
 h2,
 h3 {
-  color: #fcfc62;
+  color: var(--title);
   font-family: "Oswald", sans-serif;
 }
 
 a {
-  color: #fcfc62;
+  color: var(--link);
   text-decoration: none;
 }
 
 a:link,
 a:visited,
 a:active {
-  color: #fcfc62;
+  color: var(--link);
 }
 
 a:hover {
   cursor: pointer;
-  color: #feffea;
+  color: var(--title);
+}
+
+.button-link {
+  background-color: var(--link);
+  color: var(--white) !important;
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin: 10px 3px;
+  box-shadow: -2px 2px 4px var(--shadow);
+}
+
+.button-link:hover {
+  background-color: var(--title) !important;
+  color: var(--shade) !important;
 }
 
 header nav {
   position: fixed;
   top: 0;
-	padding: 0;
+  padding: 0;
   width: 100%;
   z-index: 10;
-  background-color: #1f1f1f;
-  box-shadow: 0px 5px 4px rgba(31, 31, 31, 0.5);
+  background-color: var(--dark);
+  box-shadow: 0px 5px 4px var(--shadow);
 }
 
 header nav a {
   height: 30px;
   display: block;
+  color: var(--white) !important;
 }
 
 footer {
   margin: 10px;
-  background-color: #1f1f1f;
-  border: 2px inset #1f1f1f;
+  background-color: var(--dark);
+  border-radius: 10px;
+  box-shadow: 0px 5px 4px var(--shadow);
   position: sticky;
   top: 100vh;
   text-align: center;
@@ -68,13 +97,19 @@ footer nav {
 }
 
 footer nav a {
+  color: var(--shade) !important;
   font-size: small;
   display: inline-block;
   padding: 5px;
   margin: 1px;
 }
 
+footer nav a:hover {
+  color: var(--title) !important;
+}
+
 footer p {
+  color: var(--white) !important;
   margin: 0;
   font-size: larger;
   font-family: "La Belle Aurore", cursive;
@@ -85,6 +120,7 @@ ul {
 }
 
 .nav-link {
+  color: var(--white);
   font-size: large;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -95,10 +131,14 @@ ul {
 
 .nav-link:hover,
 #nav-icon:hover {
-  color: #feffea;
+  color: var(--title) !important;
 }
 
 #nav-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   font-size: 25px;
   padding: 15px 20px;
   float: left;
@@ -113,29 +153,33 @@ ul {
 
 @media screen and (max-width: 768px) {
   #nav-arrow {
-		float: right;
-		right: 100px;
-		margin-top: 0;
-    color: #fcfc62;
-		font-size: 2em;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		padding-right: 24px;
-		padding-left: 20px;
-		transition: transform 0.2s ease-out;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    float: right;
+    right: 100px;
+    margin-top: 0;
+    color: var(--white);
+    font-size: 2em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    padding-left: 20px;
+    transition: transform 0.2s ease;
   }
 
-	.up {
-		transform: rotate(90deg);
-	}
+  .up {
+    transform: rotate(90deg);
+  }
 
-	.down {
-		transform: rotate(-90deg);
-	}
+  .down {
+    transform: rotate(-90deg);
+  }
 
   #nav-arrow:hover {
     cursor: pointer;
-    color: #feffea;
+    color: var(--title) !important;
   }
 
   .nav-link {
@@ -154,7 +198,7 @@ ul {
 
 .title-banner,
 .text-banner {
-  background-color: #525252;
+  background-color: var(--shade);
   margin-bottom: 20px;
 }
 
@@ -166,7 +210,6 @@ ul {
 #about-text {
   min-height: 350px;
 }
-
 
 @media screen and (max-width: 576px) {
   .title-banner {
@@ -244,13 +287,13 @@ ul {
   }
 }
 
-.card-group {
+/* .card-group {
   display: block;
   text-align: center;
   margin-bottom: 30px;
   width: 80%;
   margin: 0 auto;
-  background-color: #525252;
+  background-color: var(--background-blue-dark);
 }
 .card-group-title {
   display: block;
@@ -267,11 +310,11 @@ ul {
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
-  background-color: #c9c9c9;
-  color: #1f1f1f;
+  background-color: var(--background-blue-light);
+  color: var(--title-gold);
   text-align: center;
-  box-shadow: 5px 5px 4px rgba(31, 31, 31, 0.5);
-  border: 2px solid #1f1f1f;
+  box-shadow: 5px 5px 4px var(--shadow);
+  border: 2px solid var(--title-gold);
 }
 
 .card-title {
@@ -288,8 +331,8 @@ ul {
   position: absolute;
   bottom: 5px;
   padding: 6px;
-  border: 2px solid #1f1f1f;
-  background-color: #1f1f1f;
+  border: 2px solid var(--title-gold);
+  background-color: var(--title-gold);
 }
 
 a.card-app {
@@ -300,12 +343,13 @@ a.card-repo {
 }
 
 .card > a:hover {
-  box-shadow: 3px 3px 2px rgba(31, 31, 31, 0.5);
-  background-color: #1f1f1f;
-}
+  box-shadow: 3px 3px 2px var(--shadow);
+  background-color: var(--title-gold);
+} */
 
 #profile-photo {
-  border: 5px inset #fcfc62;
+  box-shadow: -2px 2px 4px var(--shadow);
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 576px) {
@@ -338,7 +382,78 @@ a.card-repo {
 }
 
 figcaption {
-  color: #c9c9c9;
+  color: var(--title);
   font-style: italic;
   text-align: center;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* .popup-text {
+	display: none;
+	width: 120px;
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: -50%;
+  margin-left: 5px;
+}
+
+.popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+} */
+
+/* The actual popup (appears on top) */
+.popup .popup-text {
+  width: 100px;
+  background-color: var(--dark);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: -25%;
+	transition: opacity 0.2s ease;
+	user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Popup arrow */
+.popup .popup-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent var(--dark) transparent;
+}
+
+.visible {
+	opacity: 1;
+}
+
+.invisible {
+	opacity: 0;
 }

@@ -9,3 +9,17 @@ function toggleNavDropdown() {
   }
 
 }
+
+function activatePopup(element) {
+	element += "-popup";
+	var popup = document.getElementById(element);
+	popup.classList.remove("invisible");
+	popup.classList.add("visible");
+}
+
+function deactivatePopup(element) {
+	element += "-popup";
+	var popup = document.getElementById(element);
+	popup.classList.add("invisible");
+	popup.classList.remove("visible");
+}
