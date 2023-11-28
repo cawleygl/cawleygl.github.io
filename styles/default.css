@@ -390,7 +390,6 @@ figcaption {
 .popup {
   position: relative;
   display: inline-block;
-  cursor: pointer;
 }
 
 /* .popup-text {
