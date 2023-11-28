@@ -6,6 +6,8 @@ function toggleNavDropdown() {
   for (let i = 0; i < links.length; i++) {
     links[i].classList.toggle("open");
     links[i].classList.toggle("closed");
+		// links[i].classList.remove("invisible");
+		// links[i].classList.add("visible");
   }
 
 }
@@ -13,13 +15,19 @@ function toggleNavDropdown() {
 function activatePopup(element) {
 	element += "-popup";
 	var popup = document.getElementById(element);
-	popup.classList.remove("invisible");
-	popup.classList.add("visible");
+	popup.classList.remove("closed");
+	timeout = setTimeout(function() {
+		popup.classList.toggle("invisible");
+		popup.classList.toggle("visible");
+	}, 10);
 }
 
 function deactivatePopup(element) {
 	element += "-popup";
 	var popup = document.getElementById(element);
-	popup.classList.add("invisible");
-	popup.classList.remove("visible");
+	popup.classList.toggle("invisible");
+	popup.classList.toggle("visible");
+	timeout = setTimeout(function() {
+		popup.classList.add("closed");
+	}, 200);
 }

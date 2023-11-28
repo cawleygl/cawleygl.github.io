@@ -436,7 +436,7 @@ figcaption {
   z-index: 1;
   top: 150%;
   left: -25%;
-	transition: opacity 0.2s ease;
+	transition: opacity 0.25s ease;
   box-shadow: -2px 2px 4px var(--soft-shadow);
 }
 
