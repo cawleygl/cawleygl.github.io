@@ -430,13 +430,14 @@ figcaption {
   background-color: var(--dark);
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 8px 0;
   position: absolute;
   z-index: 1;
   top: 150%;
   left: -25%;
 	transition: opacity 0.2s ease;
+  box-shadow: -2px 2px 4px var(--soft-shadow);
 }
 
 /* Popup arrow */
