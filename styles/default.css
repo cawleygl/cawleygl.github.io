@@ -5,7 +5,8 @@
   --link: #2754ae;
   --white: #fdf3d8;
   --shade: #fbe7b1;
-  --shadow: rgba(70, 70, 70, 0.3);
+  --soft-shadow: rgba(70, 70, 70, 0.3);
+  --dark-shadow: rgba(70, 70, 70, 0.6);
 }
 
 html,
@@ -70,7 +71,7 @@ a:hover {
   padding-bottom: 5px;
   border-radius: 10px;
   margin: 10px 3px;
-  box-shadow: -2px 2px 4px var(--shadow);
+  box-shadow: -2px 2px 4px var(--dark-shadow);
 }
 
 .button-link:hover {
@@ -85,7 +86,7 @@ header nav {
   width: 100%;
   z-index: 10;
   background-color: var(--dark);
-	box-shadow: 0px 5px 4px var(--shadow);
+	box-shadow: 0px 5px 4px var(--soft-shadow);
 }
 
 header nav a {
@@ -98,7 +99,7 @@ footer {
   margin: 10px;
   background-color: var(--dark);
   border-radius: 10px;
-  box-shadow: 0px 5px 4px var(--shadow);
+  box-shadow: 0px 5px 4px var(--soft-shadow);
   position: sticky;
   top: 100vh;
   text-align: center;
@@ -204,7 +205,7 @@ ul {
 .text-banner {
   background-color: var(--shade);
   margin-bottom: 20px;
-	box-shadow: 0px 2px 8px var(--shadow);
+	box-shadow: 0px 2px 8px var(--soft-shadow);
 }
 
 .text-banner {
@@ -318,7 +319,7 @@ ul {
   background-color: var(--background-blue-light);
   color: var(--title-gold);
   text-align: center;
-  box-shadow: 5px 5px 4px var(--shadow);
+  box-shadow: 5px 5px 4px var(--soft-shadow);
   border: 2px solid var(--title-gold);
 }
 
@@ -348,12 +349,12 @@ a.card-repo {
 }
 
 .card > a:hover {
-  box-shadow: 3px 3px 2px var(--shadow);
+  box-shadow: 3px 3px 2px var(--soft-shadow);
   background-color: var(--title-gold);
 } */
 
 #profile-photo {
-  box-shadow: -2px 2px 4px var(--shadow);
+  box-shadow: -2px 2px 4px var(--soft-shadow);
   border-radius: 4px;
 }
 
