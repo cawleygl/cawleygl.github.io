@@ -25,6 +25,18 @@ main {
   margin-bottom: 20px;
 }
 
+.no-highlight {
+	user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-select: none;
+	-webkit-touch-callout: none;
+	-webkit-text-select: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 h1,
 h2,
 h3 {
@@ -135,13 +147,6 @@ ul {
 }
 
 #nav-icon {
-	user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -khtml-select: none;
-	-webkit-touch-callout: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-size: 25px;
   padding: 15px 20px;
   float: left;
@@ -156,13 +161,6 @@ ul {
 
 @media screen and (max-width: 768px) {
   #nav-arrow {
-		user-select: none;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		-khtml-select: none;
-		-webkit-touch-callout: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     float: right;
     right: 100px;
     margin-top: 0;
@@ -437,13 +435,6 @@ figcaption {
   top: 150%;
   left: -25%;
 	transition: opacity 0.2s ease;
-	user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -khtml-select: none;
-	-webkit-touch-callout: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* Popup arrow */
