@@ -5,7 +5,7 @@
   --link: #2754ae;
   --white: #fdf3d8;
   --shade: #fbe7b1;
-  --shadow: rgba(42, 42, 42, 0.5);
+  --shadow: rgba(70, 70, 70, 0.3);
 }
 
 html,
@@ -85,7 +85,7 @@ header nav {
   width: 100%;
   z-index: 10;
   background-color: var(--dark);
-  box-shadow: 0px 5px 4px var(--shadow);
+	box-shadow: 0px 5px 4px var(--shadow);
 }
 
 header nav a {
@@ -204,6 +204,7 @@ ul {
 .text-banner {
   background-color: var(--shade);
   margin-bottom: 20px;
+	box-shadow: 0px 2px 8px var(--shadow);
 }
 
 .text-banner {
