@@ -19,6 +19,15 @@ button,
   width: 80%;
   box-shadow: 4px 7px var(--MD-yellow);
   margin-bottom: 20px;
+	max-width: 750px;
+}
+
+.product-availability {
+	margin: 0;
+}
+
+figcaption {
+	font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
