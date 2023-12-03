@@ -14,10 +14,8 @@ function clickEvent(event) {
 		success: function(data) {
 			const { speakers } = data;
 			const [ speakerInfo ] = speakers;
-			console.log(speakerInfo);
 			// Clear main
 			const [main] = document.getElementsByTagName("main");
-			console.log(main);
 			main.innerHTML = "";
 			// Build elements with json data
 			let title = document.createElement("h1");
