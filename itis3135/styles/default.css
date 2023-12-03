@@ -83,6 +83,10 @@ h3 {
   color: maroon;
 }
 
+header nav {
+	margin-bottom: 10px;
+}
+
 figure {
   text-align: center;
   padding: 0;
