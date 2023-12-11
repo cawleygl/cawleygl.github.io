@@ -86,7 +86,7 @@ function navigateFeaturedProducts(operator) {
 	if (activeProduct >= featuredProducts.length) {
 		activeProduct = 0;
 	} else if (activeProduct < 0) {
-		activeProduct = 3;
+		activeProduct = featuredProducts.length - 1;
 	}
 
 	$.ajax({
