@@ -34,10 +34,17 @@ function deactivatePopup(element) {
 
 function slideDrawer(element) {
 	var elements = document.getElementsByClassName(element);
-	var button = elements[0];
+
+	var icon = elements[0];
 	var content = elements[1];
 
 	content.classList.add("slide-animation");
 	content.classList.toggle("play-slide-animation");
+
+	if (icon.innerHTML === "+") {
+		icon.innerHTML = "-";
+	} else {
+		icon.innerHTML = "+";
+	}
 
 }
