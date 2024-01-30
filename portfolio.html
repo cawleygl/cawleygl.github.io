@@ -2,93 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grant Cawley &#9884; Portfolio</title>
-  <link rel="stylesheet" href="styles/default.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=La+Belle+Aurore&family=Oswald:wght@500&display=swap"
-    rel="stylesheet">
-  <script src="scripts/default.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grant Cawley &#9884; Portfolio</title>
+	<link rel="stylesheet" href="styles/default.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=La+Belle+Aurore&family=Oswald:wght@500&display=swap"
+		rel="stylesheet">
+	<script src="scripts/default.js"></script>
 </head>
 
 <body>
-  <div data-include="components/header.html"></div>
-  <main>
-    <div class="title-banner">
-      <h1>Project Portfolio</h1>
-      <p>Coming soon!</p>
-      <!-- <p>A showcase of some of the web pages and applications I've made.</p> -->
-    </div>
-    <!-- <section class="card-group">
-      <h2 class="card-group-title">UNC Charlotte</h2>
-      <div class="card">
-        <div class="card-title">ITIS 3135 Course</div>
-        <div class="card-content">Web-Based Application Design and Development at UNC Charlotte</div>
-        <a class="card-app" href="/itis3135/">Application</a>
-        <a class="card-repo" href="https://github.com/cawleygl/cawleygl.github.io">Repository</a>
-      </div>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-    </section>
-    <section class="card-group">
-      <h2 class="card-group-title">Personal Projects</h2>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-    </section>
-    <section class="card-group">
-      <h2 class="card-group-title">Washington University Coding Bootcamp</h2>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-      <div class="card">
-        <div class="card-title">Title</div>
-        <div class="card-content">Content</div>
-        <a class="card-app" href="/#">Application</a>
-        <a class="card-repo" href="/#">Repository</a>
-      </div>
-    </section> -->
+	<div data-include="components/header.html"></div>
+	<main>
+		<div class="title-banner">
+			<h1>Project Portfolio</h1>
+			<p>A showcase of some of the web pages and applications I've made.</p>
+		</div>
 
-  </main>
-  <div data-include="components/footer.html"></div>
-  <script src="scripts/include.js"></script>
+		<div class="drawer no-highlight">
+			<button type="button" class="unc-charlotte drawer-button" onclick="slideDrawer('unc-charlotte')">UNC
+				Charlotte<span class="drawer-icon">-</span></button>
+
+			<div class="unc-charlotte drawer-content">
+
+				<div>
+					<a href="itis3135/">Web Design Class (ITIS 3135) Site</a>
+					<p class="drawer-content-description">An original HTML, CSS, and JavaScript website containing class assignments for
+						ITIS 3135.</p>
+					<a class="drawer-content-repo button-link"
+						href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis3135">Repository</a>
+				</div>
+
+				<div>
+					<a href="itis4166/">Network Class (ITIS 4166) Site</a>
+					<p class="drawer-content-description">A mock storefront written in HTML, CSS, and JavaScript using Bootstrap.
+						Used in ITIS 4166 as a base application for network-based assignments.</p>
+					<a class="drawer-content-repo button-link"
+						href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis4166">Repository</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="drawer no-highlight">
+			<button type="button" class="freeCodeCamp drawer-button" onclick="slideDrawer('freeCodeCamp')">freeCodeCamp<span
+					class="drawer-icon">-</span></button>
+			<div class="freeCodeCamp drawer-content">
+				<div>
+					<a href="projects/technical_documentation.html">Technical Documentation Page</a>
+					<p class="drawer-content-description">A documentation webpage with a responsive navigation bar written as a part of freeCodeCamp's Responsive Web Design certification course.</p>
+					<a class="drawer-content-repo button-link"
+						href="https://github.com/cawleygl/cawleygl.github.io/blob/main/projects/technical_documentation.html">Repository</a>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/include.js"></script>
 </body>
 
 </html>
