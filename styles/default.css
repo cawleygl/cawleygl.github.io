@@ -13,7 +13,7 @@ body {
   min-height: calc(100vh - 83px);
   background-image: url("../images/stars-philippe-donn-1169754.jpg");
   background-size: cover;
-  background-color: var(--starry-night);
+  background-color: var(#000000);
 }
 
 body {
