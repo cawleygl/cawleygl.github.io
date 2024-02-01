@@ -11,12 +11,12 @@
 html,
 body {
   min-height: calc(100vh - 83px);
-  background-image: url("../images/stars-philippe-donn-1169754.jpg");
-  background-size: cover;
-  background-color: var(#000000);
 }
 
 body {
+  background-image: url("../images/stars-philippe-donn-1169754.jpg");
+  background-size: cover;
+  background-color: var(#000000);
   color: var(--white);
   margin: 0;
   font-family: "Carrois Gothic", sans-serif;
@@ -52,7 +52,7 @@ a {
 }
 
 a:not(.button-link) {
-	font-style: italic;
+  font-style: italic;
 }
 
 a:link,
@@ -98,7 +98,7 @@ header nav a {
 }
 
 footer {
-	position: sticky;
+  position: sticky;
   margin: 0;
   padding: 10px;
   background-color: var(--content);
@@ -134,7 +134,7 @@ footer p {
 }
 
 #signature {
-	color: var(--subtle) !important;
+  color: var(--subtle) !important;
   margin: 0;
   font-size: larger;
   font-family: "La Belle Aurore", cursive;
@@ -156,13 +156,13 @@ ul {
 
 .nav-link:hover {
   background-color: var(--emphasis) !important;
-	color: var(--starry-night) !important;
+  color: var(--starry-night) !important;
 }
 
 #nav-arrow:hover,
 #nav-icon:hover {
-	cursor: pointer;
-	color: var(--emphasis) !important;
+  cursor: pointer;
+  color: var(--emphasis) !important;
 }
 
 #nav-icon {
@@ -481,7 +481,7 @@ figcaption {
 }
 
 .drawer-button {
-	cursor: pointer;
+  cursor: pointer;
   display: block;
   position: relative;
   z-index: 1;
@@ -517,10 +517,10 @@ figcaption {
 }
 
 .drawer-content div {
-	padding-top: 15px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .drawer-content-description {
@@ -532,7 +532,7 @@ figcaption {
 }
 
 .drawer-content-repo {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 /* .drawer-closed {
@@ -572,11 +572,11 @@ figcaption {
 }
 
 #washu-badge {
-	margin-top: 20px;
-	margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #washu-badge > iframe {
-	background-color: #fff;
-	border-radius: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
