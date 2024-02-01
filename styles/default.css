@@ -517,9 +517,8 @@ figcaption {
 }
 
 .drawer-content div {
-  width: 100%;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -527,7 +526,7 @@ figcaption {
 .drawer-content-description {
   color: var(--starry-night);
   padding: 0;
-  padding-left: 10px;
+  margin-left: 10px;
   margin: 10px;
   font-size: 0.95em;
 }
@@ -574,6 +573,7 @@ figcaption {
 
 #washu-badge {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #washu-badge > iframe {
