@@ -1,8 +1,9 @@
+/* https://coolors.co/76c9be-7b2828-e4b54f-202c39-df8780 */
 :root {
   --starry-night: #272c6a;
   --emphasis: #33c4c9;
   --white: #fff9e8;
-  --subtle: #fff9e8ae;
+  --subtle: #fff9e870;
   --shade: #ffeec0;
   --content: #00000088;
   --link: rgb(215, 85, 33);
@@ -17,6 +18,7 @@ body {
   background-image: url("../images/stars-philippe-donn-1169754.jpg");
   background-size: cover;
   background-color: var(#000000);
+	background-attachment: fixed;
   color: var(--white);
   margin: 0;
   font-family: "Carrois Gothic", sans-serif;
@@ -129,15 +131,15 @@ footer nav a:hover {
 footer p {
   color: var(--emphasis) !important;
   margin: 0;
-  font-size: 1.2em;
   font-family: "Oswald", sans-serif;
 }
 
 #signature {
   color: var(--subtle) !important;
-  margin: 0;
-  font-size: larger;
+  margin-top: 10px;
+	margin-bottom: -10px;
   font-family: "La Belle Aurore", cursive;
+	text-align: center;
 }
 
 ul {
