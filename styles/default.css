@@ -344,6 +344,12 @@ a.card:hover {
   text-align: left;
 }
 
+.card-icon {
+	margin-top: 30px;
+	font-size: 5em;
+  font-style: normal;
+}
+
 .card-footer {
 	font-size: larger;
   margin: 10px;
