@@ -29,7 +29,7 @@
 
 html,
 body {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100dvh - 60px);
 }
 
 body {
@@ -180,7 +180,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 15px;
   background-color: var(--paper-yellow);
-  top: 100vh;
+  top: 100dvh;
   text-align: center;
   border-bottom: 3px solid var(--shadow);
 }
@@ -224,7 +224,7 @@ footer p {
 .red-line {
   position: absolute;
   border-left: 6px double var(--line-red);
-  min-height: calc(100vh - 60px);
+  min-height: calc(100dvh - 60px);
   width: 0;
   z-index: 1;
 }
