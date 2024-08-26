@@ -114,7 +114,7 @@ header nav a.closed:hover,
 #nav-icon:hover {
   cursor: pointer;
   text-decoration: none;
-  color: var(--shadow);
+  color: var(--ink-red);
 }
 
 #nav-icon {
