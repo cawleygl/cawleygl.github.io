@@ -1,7 +1,8 @@
 /* https://coolors.co/76c9be-7b2828-e4b54f-202c39-df8780 */
 :root {
-  --paper-yellow: rgb(255, 234, 150);
-  --line-blue: rgba(21, 174, 138, 0.567);
+  --paper-yellow: rgb(233, 215, 145);
+	--paper-white: rgb(243, 242, 237);
+  --line-blue: rgba(14, 189, 238, 0.626);
   --line-red: rgba(255, 78, 78, 0.528);
   --spine-brown: rgb(49, 26, 20);
   --spine-label: rgb(186, 186, 186);
@@ -10,8 +11,7 @@
   --note-pink: rgb(232, 138, 214);
   --note-blue: rgb(117, 225, 235);
   --note-green: rgb(149, 234, 103);
-  --note-yellow: rgb(238, 221, 74);
-	--img-white: rgb(243, 242, 237);
+  --note-yellow: rgb(245, 245, 67);
   --shadow: rgba(94, 94, 94, 0.561);
 }
 
@@ -32,6 +32,10 @@ body {
   min-height: calc(100dvh - 60px);
 }
 
+html {
+	background-color: var(--paper-yellow);
+}
+
 body {
   background: linear-gradient(var(--line-blue) 1px, var(--paper-yellow) 1px);
   background-size: 100% 35px;
@@ -41,6 +45,7 @@ body {
 }
 
 main {
+	position: block;
   margin-top: 60px;
   margin-bottom: 20px;
 }
@@ -57,15 +62,15 @@ ul {
 }
 
 a {
-  color: var(--link);
+	color: var(--ink-red);
   text-decoration: none;
-  color: var(--ink-red);
-  font-style: italic;
+  font-style: normal;
 }
 
-a:hover {
+a:hover,
+#washu-badge > iframe:hover {
   cursor: pointer;
-  text-decoration: underline;
+  font-style: italic;
 }
 
 .closed {
@@ -182,24 +187,25 @@ footer {
   background-color: var(--paper-yellow);
   top: 100dvh;
   text-align: center;
-  border-bottom: 3px solid var(--shadow);
 }
 
 footer nav a {
-  background-color: var(--starry-night);
-  border-radius: 6px;
-  padding: 5px;
-  color: var(--ink-red) !important;
+  background-color: var(--note-yellow);
+	transform: skew(-5deg);
+  margin-bottom: 10px;
   font-size: small;
   display: inline-block;
-  padding: 5px;
-  margin: 1px;
+  padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+  margin-left: -5px;
 }
 
-footer p {
-  margin: 0;
+footer > .title {
+  margin-bottom: 2px;
 	font-family: "Caveat Brush", cursive;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 #signature {
@@ -207,6 +213,7 @@ footer p {
   margin-bottom: -10px;
   font-family: "La Belle Aurore", cursive;
   text-align: center;
+	text-decoration: none;
 }
 
 /* ----- CONTENT ----- */
@@ -222,7 +229,7 @@ footer p {
 }
 
 .red-line {
-  position: absolute;
+  position: fixed;
   border-left: 6px double var(--line-red);
   min-height: calc(100dvh - 60px);
   width: 0;
@@ -230,81 +237,125 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  .paper-title {
+  .paper-title,
+	.card-group {
     padding-left: 30px;
     padding-right: 30px;
   }
   .red-line {
     left: 5px;
   }
+	#washu-badge {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .paper-title {
-    padding-left: 50px;
+  .paper-title,
+	.card-group {
+		padding-left: 50px;
     padding-right: 50px;
-  }
-  .red-line {
-    left: 20px;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  .paper-title {
-    padding-left: 150px;
+  .paper-title,
+	.card-group {
+		padding-left: 150px;
     padding-right: 150px;
   }
-  .red-line {
-    left: 100px;
-  }
 }
+
 @media screen and (min-width: 1400px) and (max-width: 2000px) {
-  .paper-title {
+	.paper-title,
+	.card-group {
     padding-left: 300px;
     padding-right: 300px;
   }
-  .red-line {
-    left: 200px;
-  }
 }
 @media screen and (min-width: 2000px) {
-  .paper-title {
+	.paper-title,
+	.card-group {
     padding-left: 400px;
     padding-right: 400px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .red-line {
+    left: 20px;
+  }
+	#washu-badge {
+		right: 10px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
   .red-line {
     left: 200px;
   }
+	#washu-badge {
+		right: 150px;
+	}
 }
 
 /* ----- CARDS & FIGURES ----- */
+/* 
+	a.card = sticky note
+	div.card = index card
+	figure = picture 
+*/
 
 figure,
-.card  {
-  display: inline-block;
+.card {
+	display: inline-block;
   position: relative;
-  vertical-align: top;
-  margin: 15px;
-  box-shadow: 0 4px 2px var(--shadow);
+	vertical-align: top;
+	margin: 15px;
 	z-index: 3;
 }
 
 div.card {
-	color: var(--ink-blue);
+	background: linear-gradient(var(--line-blue) 1px, var(--paper-white) 1px);
+  background-size: 100% 30px;
+	max-width: 600px;
+	min-width: 350px;
+	aspect-ratio: 5/3;
 }
 
-.card {
+a.card{
+	box-shadow: 3px 5px 5px var(--shadow);
 	max-width: 80%;
 	max-height: 600px;
-	min-width: 250px;
+	min-width: 200px;
 	aspect-ratio: 1;
 }
 
+
+figure,
+div.card {
+	background-color: var(--paper-white);
+	box-shadow: 1px 1px 4px var(--shadow);
+}
+
+a.card:nth-child(4n-3) {
+  background-color: var(--note-pink);
+}
+a.card:nth-child(4n-2) {
+  background-color: var(--note-blue);
+}
+a.card:nth-child(4n-1) {
+  background-color: var(--note-yellow);
+}
+a.card:nth-child(4n) {
+  background-color: var(--note-green);
+}
+
 figure {
+	background-color: var(--paper-white);
 	color: var(--ink-blue);
 	width: 325px;
   height: 350px;
-	background-color: var(--img-white);
 	padding-top: 25px;
 }
 
@@ -328,20 +379,35 @@ figcaption {
   margin: 0 auto;
 }
 
-a.card:hover {
-	box-shadow: 6px 8px 4px var(--shadow);
-	transform: translate(-6px, -4px);
+a.card:hover,
+#washu-badge > iframe:hover {
+	box-shadow: 8px 8px 7px var(--shadow);
+	transform: translate(-6px, -1px) skew(-1deg);
 }
 
 .card-header {
+	width: 100%;
+	padding-top: 2px;
   font-size: 1.6em;
 	font-family: "Caveat Brush", cursive;
-	  margin: 10px;
+}
+
+div.card > .card-header {
+	background-color: var(--paper-white);
+	border-bottom: 2px solid var(--line-red);
 }
 
 .card-content {
-  margin: 10px;
   text-align: left;
+}
+
+div.card > .card-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 2px;
+	padding-bottom: 60px;
+	line-height: 1.87;
+	text-align: justify;
 }
 
 .card-icon {
@@ -351,22 +417,17 @@ a.card:hover {
 }
 
 .card-footer {
+	background-color: var(--paper-white);
+	padding-top: 2px;
+	padding-bottom: 5px;
 	font-size: larger;
-  margin: 10px;
-  font-style: italic;
-}
-
-.card:nth-child(4n-3) {
-  background-color: var(--note-pink);
-}
-.card:nth-child(4n-2) {
-  background-color: var(--note-blue);
-}
-.card:nth-child(4n-1) {
-  background-color: var(--note-yellow);
-}
-.card:nth-child(4n) {
-  background-color: var(--note-green);
+	font-style: italic;
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 	
 }
 
 /* .popup {
@@ -430,9 +491,10 @@ a.card:hover {
 #washu-badge {
   margin-top: 20px;
   margin-bottom: 20px;
+	position: absolute;
 }
 
 #washu-badge > iframe {
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: var(--note-blue);
+	box-shadow: 3px 5px 5px var(--shadow);
 }
