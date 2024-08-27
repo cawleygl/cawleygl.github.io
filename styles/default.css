@@ -319,7 +319,7 @@ div.card {
 	background: linear-gradient(var(--line-blue) 1px, var(--paper-white) 1px);
   background-size: 100% 30px;
 	max-width: 600px;
-	min-width: 350px;
+	min-width: 200px;
 	aspect-ratio: 5/3;
 }
 
@@ -354,20 +354,24 @@ a.card:nth-child(4n) {
 figure {
 	background-color: var(--paper-white);
 	color: var(--ink-blue);
-	width: 325px;
-  height: 350px;
-	padding-top: 25px;
+	height: auto;
+	width: auto;
+	max-width: 325px;
+	min-width: 200px;
+	aspect-ratio: 34/42;
+	padding-top: 20px;
 }
 
 figure > img {
-	width: 275px;
-	height: 275px;
+	aspect-ratio: 1;
+	width: 87%;
 	object-fit: cover;
 }
 
 figcaption {
   color: var(--ink-blue);
-  font-style: italic;
+	font-size: 1.4em;
+	font-family: "Caveat Brush", cursive;
   text-align: center;
 	margin-top: 20px;
 }
