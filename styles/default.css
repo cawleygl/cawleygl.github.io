@@ -403,15 +403,11 @@ div.card > .card-header {
 
 .card-content {
   text-align: left;
-}
-
-div.card > .card-content {
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 2px;
 	padding-bottom: 60px;
 	line-height: 1.87;
-	text-align: justify;
 }
 
 .card-icon {
