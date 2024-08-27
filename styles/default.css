@@ -1,6 +1,6 @@
 /* https://coolors.co/76c9be-7b2828-e4b54f-202c39-df8780 */
 :root {
-  --paper-yellow: rgb(233, 215, 145);
+  --paper-yellow: rgb(244, 229, 170);
 	--paper-white: rgb(243, 242, 237);
   --line-blue: rgba(14, 189, 238, 0.626);
   --line-red: rgba(255, 78, 78, 0.528);
@@ -8,9 +8,9 @@
   --spine-label: rgb(186, 186, 186);
   --ink-blue: rgb(25, 9, 127);
   --ink-red: rgb(169, 27, 27);
-  --note-pink: rgb(232, 138, 214);
-  --note-blue: rgb(117, 225, 235);
-  --note-green: rgb(149, 234, 103);
+  --note-pink: rgb(248, 132, 227);
+  --note-blue: rgb(108, 228, 238);
+  --note-green: rgb(150, 244, 99);
   --note-yellow: rgb(245, 245, 67);
   --shadow: rgba(94, 94, 94, 0.561);
 }
