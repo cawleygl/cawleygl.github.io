@@ -67,8 +67,7 @@ a {
   font-style: normal;
 }
 
-a:hover,
-#washu-badge > iframe:hover {
+a:hover {
   cursor: pointer;
   font-style: italic;
 }
@@ -245,9 +244,6 @@ footer > .title {
   .red-line {
     left: 5px;
   }
-	#washu-badge {
-		display: none;
-	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -285,18 +281,12 @@ footer > .title {
   .red-line {
     left: 20px;
   }
-	#washu-badge {
-		right: 10px;
-	}
 }
 
 @media screen and (min-width: 1400px) {
   .red-line {
     left: 200px;
   }
-	#washu-badge {
-		right: 150px;
-	}
 }
 
 /* ----- CARDS & FIGURES ----- */
@@ -383,8 +373,7 @@ figcaption {
   margin: 0 auto;
 }
 
-a.card:hover,
-#washu-badge > iframe:hover {
+a.card:hover {
 	box-shadow: 8px 8px 7px var(--shadow);
 	transform: translate(-6px, -1px) skew(-1deg);
 }
@@ -486,15 +475,4 @@ div.card > .card-header {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent var(--starry-night) transparent;
-}
-
-#washu-badge {
-  margin-top: 20px;
-  margin-bottom: 20px;
-	position: absolute;
-}
-
-#washu-badge > iframe {
-  background-color: var(--note-blue);
-	box-shadow: 3px 5px 5px var(--shadow);
 }
