@@ -158,8 +158,12 @@ header nav a.closed:hover,
     width: 100%;
     float: left;
     background-color: var(--paper-yellow);
-    color: var(--ink-blue);
+    color: var(--ink-red);
+		font-family: "Caveat Brush", cursive;
+		font-size: 1.4em;
     border-top: 2px solid var(--shadow);
+		padding-top: 15px;
+		padding-bottom: 15px;
   }
 
   .nav-link:nth-child(4n-3) {
@@ -227,7 +231,7 @@ footer > .title {
   min-height: 350px;
 }
 
-.red-line {
+.side-bar {
   position: fixed;
   border-left: 6px double var(--line-red);
   min-height: calc(100dvh - 60px);
@@ -241,7 +245,7 @@ footer > .title {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .red-line {
+  .side-bar {
     left: 5px;
   }
 }
@@ -278,13 +282,13 @@ footer > .title {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1400px) {
-  .red-line {
+  .side-bar {
     left: 20px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .red-line {
+  .side-bar {
     left: 200px;
   }
 }
