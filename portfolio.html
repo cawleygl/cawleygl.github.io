@@ -1,80 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Grant Cawley &#9884; Portfolio</title>
-	<link rel="stylesheet" href="styles/default.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=La+Belle+Aurore&family=Caveat+Brush&display=swap"
-		rel="stylesheet">
-	<script src="scripts/default.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Cawley &#9884; Portfolio</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=La+Belle+Aurore&family=Caveat+Brush&display=swap"
+        rel="stylesheet">
+    <script src="scripts/default.js"></script>
+    <script src="https://kit.fontawesome.com/b25b898206.js"
+        crossorigin="anonymous"></script>
 </head>
-
 <body>
-	<div data-include="components/header.html"></div>
-	<main>
-		<div class="side-bar"></div>
-		<div class="paper-title">
-			<h1>Project Portfolio</h1>
-			<p>A showcase of some of the web pages and applications I've made.</p>
-		</div>
-
-		<!-- <div class="drawer no-highlight">
-			<button type="button" class="drawer-button" onclick="slideDrawer('unc-charlotte')">UNC
-				Charlotte<span class="unc-charlotte drawer-icon">-</span></button>
-			<div class="unc-charlotte drawer-content">
-
-				<div>
-					<a href="itis3135/">Web Design Class Site - ITIS 3135</a>
-					<p class="drawer-content-description">A basic HTML, CSS, and JavaScript website containing class assignments
-						for
-						Web-Based Application Design and Development (ITIS 3135).</p>
-					<a class="drawer-content-repo button-link"
-						href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis3135">Repository</a>
-				</div>
-
-				<div>
-					<a href="itis3135/stuffmadebymd">Stuff Made By MD - ITIS 3135</a>
-					<p class="drawer-content-description">An original HTML, CSS, and JavaScript website project for Web-Based
-						Application Design and Development (ITIS 3135). This site uses URL parameters to load individual product
-						pages, and other custom JavaScript elements.</p>
-					<a class="drawer-content-repo button-link"
-						href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis3135/stuffmadebymd">Repository</a>
-				</div>
-
-				<div>
-					<a href="itis4166/">Grant's (Used) Games - ITIS 4166</a>
-					<p class="drawer-content-description">A mock storefront written in HTML, CSS, and JavaScript using Bootstrap.
-						Used in Network-Based Application Development (ITIS 4166) as a base application for network-based
-						assignments.</p>
-					<a class="drawer-content-repo button-link"
-						href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis4166">Repository</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="drawer no-highlight">
-			<button type="button" class="drawer-button" onclick="slideDrawer('freeCodeCamp')">freeCodeCamp<span
-					class="freeCodeCamp drawer-icon">-</span></button>
-			<div class="freeCodeCamp drawer-content">
-				<div>
-					<a href="projects/technical_documentation.html">Technical Documentation Page</a>
-					<p class="drawer-content-description">A documentation webpage with a responsive navigation bar written as a
-						part of freeCodeCamp's Responsive Web Design certification course.</p>
-					<a class="drawer-content-repo button-link"
-						href="https://github.com/cawleygl/cawleygl.github.io/blob/main/projects/technical_documentation.html">Repository</a>
-				</div>
-			</div>
-		</div> -->
-
-	</main>
-	<div data-include="components/footer.html"></div>
-	<script src="scripts/include.js"></script>
+    <div data-include="components/header.html"></div>
+    <main>
+        <div class="side-bar"></div>
+        <div class="paper-title">
+            <h1>Project Portfolio</h1>
+            <p>A showcase of some of the web pages and applications I've made.
+            </p>
+        </div>
+        <nav class="divider-nav">
+            <a href="#unc_charlotte">UNC Charlotte</a>
+            <a href="#wustl_bootcamp">WUSTL Coding Bootcamp</a>
+            <a href="#freeCodeCamp">freeCodeCamp</a>
+            <!-- <a href="#personal_projects">Personal Projects</a> -->
+        </nav>
+        <section id="unc-charlotte">
+            <div class="divider unc_charlotte">
+                <div class="divider-header">
+                    <h2 class="unc_charlotte">UNC Charlotte</h2>
+                </div>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-header">Web Design Class Site - ITIS
+                            3135
+                        </div>
+                        <div class="card-content">A basic HTML, CSS, and
+                            JavaScript
+                            website containing class assignments
+                            for
+                            Web-Based Application Design and Development (ITIS
+                            3135).</div>
+                        <div class="card-footer">
+                            <div class="card-links">
+                                <a class="card-link"
+                                    href="itis3135/">Application</a>
+                                <a class="card-link"
+                                    href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis3135">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <figure>
+                    <img id="profile-photo" src="images/GrantCawley.jpg"
+                        alt="portrait photo of Grant Cawley">
+                    <figcaption>Grant Cawley</figcaption>
+                </figure> -->
+                    <div class="card">
+                        <div class="card-header">Stuff Made By MD - ITIS 3135
+                        </div>
+                        <div class="card-content">An original HTML, CSS, and
+                            JavaScript website project for Web-Based
+                            Application Design and Development (ITIS 3135). This
+                            site uses URL parameters to load individual product
+                            pages, and other custom JavaScript elements.</div>
+                        <div class="card-footer">
+                            <div class="card-links">
+                                <a class="card-link"
+                                    href="itis3135/stuffmadebymd">Application</a>
+                                <a class="card-link"
+                                    href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis3135/stuffmadebymd">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Grant's (Used) Games - ITIS
+                            4166
+                        </div>
+                        <div class="card-content">A mock storefront written in
+                            HTML,
+                            CSS, and JavaScript using Bootstrap.
+                            Used in Network-Based Application Development (ITIS
+                            4166) as a base application for network-based
+                            assignments.</div>
+                        <div class="card-footer">
+                            <div class="card-links">
+                                <a class="card-link"
+                                    href="itis4166/">Application</a>
+                                <a class="card-link"
+                                    href="https://github.com/cawleygl/cawleygl.github.io/tree/main/itis4166">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="wustl_bootcamp">
+            <div class="divider wustl_bootcamp">
+                <div class="divider-header">
+                    <h2 class="wustl_bootcamp">WUSTL Coding Bootcamp</h2>
+                </div>
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-header">React Employee Coordinator
+                        </div>
+                        <div class="card-content">A simple React front-end
+                            application for the randomuser.me API that allows
+                            users to organize and view information about the
+                            members of a team of employees. It generates random
+                            user data for 10 employees, displays the user info
+                            in a table, and allows the user to sort the table by
+                            last name or user ID using React state, components,
+                            and props.</div>
+                        <div class="card-footer">
+                            <div class="card-links">
+                                <a class="card-link"
+                                    href="projects/technical_documentation.html">Application</a>
+                                <a class="card-link"
+                                    href="https://github.com/cawleygl/cawleygl.github.io/blob/main/projects/technical_documentation.html">Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="freeCodeCamp">
+					<div class="divider freeCodeCamp">
+            <div class="divider-header">
+                <h2 class="freeCodeCamp">freeCodeCamp</h2>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-header">Technical Documentation Page</div>
+                    <div class="card-content">A documentation webpage with a
+                        responsive navigation bar written as a
+                        part of freeCodeCamp's Responsive Web Design
+                        certification course.</div>
+                    <div class="card-footer">
+                        <div class="card-links">
+                            <a class="card-link"
+                                href="projects/technical_documentation.html">Application</a>
+                            <a class="card-link"
+                                href="https://github.com/cawleygl/cawleygl.github.io/blob/main/projects/technical_documentation.html">Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+					</div>
+        </section>
+        <!-- <section id="personal_projects" class="personal_projects">
+					<div class="section-header"><h2 class="personal_projects">Personal Projects</h2></div>
+						<div class="card-group">
+							<div class="card">
+									<div class="card-header">Technical Documentation Page</div>
+									<div class="card-content">A documentation webpage with a
+											responsive navigation bar written as a
+											part of freeCodeCamp's Responsive Web Design
+											certification course.</div>
+									<div class="card-footer">
+											<div class="card-links">
+													<a class="card-link"
+															href="projects/technical_documentation.html">Application</a>
+													<a class="card-link"
+															href="https://github.com/cawleygl/cawleygl.github.io/blob/main/projects/technical_documentation.html">Repository</a>
+											</div>
+									</div>
+							</div>
+					</div>
+        </section> -->
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
 </body>
-
 </html>
