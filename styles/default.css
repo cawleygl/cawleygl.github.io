@@ -476,6 +476,7 @@ div.card > .card-header {
 }
 
 .divider-nav {
+	margin-top: 4px;
 	z-index: 4;
 }
 
