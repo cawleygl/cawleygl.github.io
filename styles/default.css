@@ -249,32 +249,35 @@ footer > .title {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .paper-title,
+@media screen and (min-width: 768px) {
   .card-group {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .paper-title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  .paper-title,
-  .card-group {
+  .paper-title{
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 
 @media screen and (min-width: 1400px) and (max-width: 2000px) {
-  .paper-title,
-  .card-group {
+  .paper-title {
     padding-left: 300px;
     padding-right: 300px;
   }
 }
 @media screen and (min-width: 2000px) {
-  .paper-title,
-  .card-group {
+  .paper-title {
     padding-left: 400px;
     padding-right: 400px;
   }
@@ -531,13 +534,23 @@ div.card > .card-header {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 2000px) {
   .divider {
-    margin-left: 230px;
-		margin-right: 230px;
+    margin-left: 215px;
+		margin-right: 215px;
   }
 	.divider-nav {
-    padding-left: 230px;
+    padding-left: 250px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .divider {
+    margin-left: 400px;
+		margin-right: 400px;
+  }
+	.divider-nav {
+    padding-left: 430px;
   }
 }
 
@@ -583,7 +596,7 @@ div.card > .card-header {
 
 @media screen and (min-width: 1400px) {
   .side-bar {
-    left: 200px;
+    left: 150px;
   }
 }
 
