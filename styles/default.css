@@ -129,7 +129,7 @@ header nav a.closed:hover,
   font-family: "La Belle Aurore", cursive;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   #nav-arrow {
     display: none;
   }
