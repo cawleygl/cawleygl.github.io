@@ -211,9 +211,8 @@ footer nav a {
   display: inline-block;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: -5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer > .title {
@@ -572,13 +571,13 @@ div.card > .card-header {
 
 @media screen and (max-width: 768px) {
   .side-bar {
-    left: 5px;
+		display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1400px) {
   .side-bar {
-    left: 20px;
+    left: 5px;
   }
 }
 
