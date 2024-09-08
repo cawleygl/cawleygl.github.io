@@ -558,21 +558,6 @@ div.card > .card-header {
 	display: inline-block;
 }
 
-.carousel > button {
-  font-size: 1.5em;
-}
-
-.carousel-next {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0 solid rgba(0, 0, 0, 0);
-}
-
-.carousel-previous {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0 solid rgba(0, 0, 0, 0);
-}
-
-
 /* ----- SIDEBAR MENU / RED LINE ----- */
 .side-bar {
   position: fixed;

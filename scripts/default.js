@@ -7,11 +7,4 @@ function toggleNavDropdown() {
 		links[i].classList.toggle("open");
 		links[i].classList.toggle("closed");
 	}
-
 }
-
-function carouselNext() {
-	var links = document.getElementsByClassName("active");
-	console.log(links);
-}
-
