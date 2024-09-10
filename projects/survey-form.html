@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+	<style>
+        :root {
+            --dark-background: #450b0b;
+            --dark-text: #EEF4ED;
+            --dark-code: #5c1313;
+            --dark-header: #fff786;
+						--dark-link: #3f338e;
+        }
+
+        html {
+            background-color: var(--dark-background);
+            color: var(--dark-text);
+            font-family: sans-serif;
+        }
+
+				body {
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+
+        h1,
+        h2 {
+            font-family: 'Marcellus', serif;
+            color: var(--dark-header);
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+
+        a {
+            color: var(--dark-link);
+            text-decoration: none;
+        }
+
+				p {
+					color: var(--dark-header);
+					margin-top: 5px;
+				}
+
+        li {
+            margin-bottom: 5px;
+        }
+
+				input, textarea, select {
+            background-color: var(--dark-text);
+            color: var(--dark-background);
+            display: inline-block;
+            padding: 8px;
+            margin: 2px;
+            border-radius: 10px;
+						border: 0;
+        }
+
+				input[type="submit"] {
+					background-color: var(--dark-header);
+					padding: 10px;
+					font-family: 'Marcellus', serif;
+					font-size: 1.2em;
+				}
+
+				input[type="submit"]:hover {
+					background-color: var(--dark-link);
+					color: var(--dark-text);
+					cursor: pointer;
+				}
+
+				label {
+					margin-right: 10px;
+				}
+
+				textarea, select {
+					display: block;
+				}
+
+				fieldset {
+					border: 0;
+					background-color: var(--dark-code);
+					margin: 10px;
+					padding: 10px;
+					border-radius: 10px;
+				}
+
+  </style>
+	    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help improve our platform.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input required id="name" type="text"
+          placeholder="Enter Your Name" /></label>
+      <label id="email-label" for="email">Email <input required id="email" type="email"
+          placeholder="Enter Your Email" /></label>
+      <label id="number-label" for="number">Age (optional) <input id="number" type="number" min="0" max="120"
+          placeholder="Age" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Which option best describes your current role?
+        <select id="dropdown" name="role">
+          <option value="">Select Current Role</option>
+          <option value="1">Student</option>
+          <option value="2">Full-Time Job</option>
+          <option value="3">Full-Time Learner</option>
+          <option value="4">Prefer Not to Say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label for="definitely">Definitely<input id="definitely" name="recommend" value="definitely" type="radio"></label>
+        <label for="maybe">Maybe<input id="maybe" name="recommend" value="maybe" type="radio"></label>
+          <label for="not-sure">Not Sure<input id="not-sure" name="recommend" value="not-sure" type="radio"></label>
+    </fieldset>
+    <fieldset>
+      <p>What would you like to see improved? Check all that apply.</p>
+      <label for="front-end">Front-End Projects<input id="front-end" name="improvement" value="front-end"
+          type="checkbox"></label>
+        <label for="back-end">Back-End Projects<input id="front-end" name="improvement" value="back-end" type="checkbox"></label>
+    </fieldset>
+    <fieldset>
+      <label for="comments">Any comments or suggestions?<textarea id="comments" name="comments" rows="3" cols="30"
+          placeholder="Enter your comment here..."></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
